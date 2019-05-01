@@ -62,10 +62,9 @@
 		</div>
 	</section>
 	<section>
-		<div id="wedding" class="container">
-			<h3 class="has-text-center">Our Special Day</h3>
-			<h4>Dewan Merak Kayangan</h4>
-			<p>Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+		<div id="countdown" class="container">
+			<h3 class="has-text-center">Counting Down</h3>
+			<div id="countdown-clock" class="has-text-center"></div>
 		</div>
 	</section>
 	<section id="rsvp-guestbook" class="bg-arch dark">
@@ -77,35 +76,52 @@
 					<div class="column is-6 field">
 					  <label class="label">Name</label>
 					  <div class="control">
-					    <input class="input" type="text" placeholder="Text input">
+					    <input class="input" type="text" placeholder="Name">
 					  </div>
 					</div>
 
 					<div class="column is-6 field">
-					  <label class="label">Email</label>
+						<label class="label">Which group are you from?</label>
+						  <div class="control">
+						    <div class="select">
+						      <select>
+						        <option value="">Choose one</option>
+						        <option value="Farhan's friend">Groom's friends/colleague</option>
+						        <option value="Farhan's family">Groom's family</option>
+						        <option value="Sara's friend/colleague">Bride's friends/colleague</option>
+						        <option value="Sara's family">Bride's family</option>
+						        <option value="Sara's family">Others</option>
+						      </select>
+						    </div>
+						  </div>
+					  <!-- <label class="label">Email (optional)</label>
 					  <div class="control">
-					    <input class="input" type="email" placeholder="Email input" value="hello@">
-					  </div>
+					    <input class="input" type="email" placeholder="Email">
+					  </div> -->
 					</div>
 				</div>
 				
 
 				<div class="field">
-				  <label class="label">Subject</label>
+				  <label class="label">Which group are you from?</label>
 				  <div class="control">
 				    <div class="select">
 				      <select>
-				        <option>Select dropdown</option>
-				        <option>With options</option>
+				        <option value="">Choose one</option>
+				        <option value="Farhan's friend">Groom's friends/colleague</option>
+				        <option value="Farhan's family">Groom's family</option>
+				        <option value="Sara's friend/colleague">Bride's friends/colleague</option>
+				        <option value="Sara's family">Bride's family</option>
+				        <option value="Sara's family">Others</option>
 				      </select>
 				    </div>
 				  </div>
 				</div>
 
 				<div class="field">
-				  <label class="label">Message</label>
+				  <label class="label">Any requests? We'll try to meet them, but we apologize if we can't!</label>
 				  <div class="control">
-				    <textarea class="textarea" placeholder="Textarea"></textarea>
+				    <textarea class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
 				  </div>
 				</div>
 
@@ -151,7 +167,7 @@
 			</div>
 		</div> -->
 	</section>
-	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
 	<script src="script/script.js"></script>
 </body>
 </html>
