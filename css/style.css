@@ -17,11 +17,21 @@ h3 {
 h4 {
   font-size: 1.6rem;
   opacity: 0.7;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  line-height: 1.6rem;
+  margin-bottom: 5px; }
 
 hr {
   background-color: transparent;
   border-top: 1px dashed #e5e5e5; }
+
+p {
+  line-height: 1.4rem; }
+
+.button {
+  height: auto;
+  white-space: unset;
+  line-height: 1.4rem; }
 
 /* the slides */
 .slick-slide {
@@ -143,10 +153,12 @@ body {
   #about-us .img--sara {
     background-image: url("https://lh3.googleusercontent.com/xkTyrcSK_DUkjbH3pl-YPLVgMu0zaOU-NnHZ2BRjykM_WcW1KgCcvvtZItSVFGyIrPE3L9UVyegOybtA20V8l71puFKElIBcF6AuOyrUBrK-TT0RzrUcnpgE1KSscYqFs5pxwmykzGe4FBrA7Mh_XJXLJN2Jtf4ut5PYBknuLlRHIPyV8_9ufEeJflZboekbDbYifFAZ_gi0NpGk4tCXPl1Cbgpa9O8kD9f7JoxAU6WqS8KD0rK8fMIdpIFqxmtLy8H_47Rjq6u2Ve2Jauh4vyGuOI6IqofvWe5fS4WmW8NHj25guT33lXE-nZ1P_Ff_Hv-u_oLYRbtgoy2pk9k4Mm0n3PtrtW-b_mvIPXff4RoPPrFyjLRaYSZWS0bGt_EDopYGRmom2IsMxOOfXLli9bN8g65y2oODhD1a4Nbx-TyN2IsiW0VsFvi50-omPrf_34GpTqNzA02_ybOtMhtg1gW5kqA2_08sm3MF_Nm9ODAQLFHS_nNyM_SkwDTG-yGvljjGYI-wC35p9ShHRulfQGRg2QFvcQqAP8QHUjOkd7iFtSqvL6nPh4i_tODQnvr5-j5GzgZQJFNvGr_WDP9JmYeBWNwH1rt8KYpcQTuZ7sX9lkqesQqLD2Qo_AWPq0bsj2rJpUMcT0rWJD_mlwRxVw_xyhoFES6P5bGv6ooT1xcV_SBr8IhjstMcFloUJDpErE2Kpky-Pvw5A07aLgjaEAijFg=w1078-h1436-no"); }
 
-#rsvp .form {
-  margin-top: 45px;
-  padding: 20px;
-  border: 1px solid white; }
+#rsvp, #guestbook {
+  outline: none; }
+  #rsvp .form, #guestbook .form {
+    margin-top: 45px;
+    padding: 20px;
+    border: 1px solid white; }
 
 #rsvp-guestbook {
   outline: none; }
@@ -157,3 +169,11 @@ body {
     #gallery img {
       max-height: 300px;
       max-width: 320px; } }
+
+#reception-activity {
+  outline: none; }
+  #reception-activity .button {
+    margin-bottom: 10px; }
+  #reception-activity .decorative-title:after {
+    margin-top: -17px;
+    font-size: 7rem; }
