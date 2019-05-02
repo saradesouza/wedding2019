@@ -37,6 +37,46 @@ $(document).ready(() => {
     });
 });
 
+$(document).ready(function(){
+  console.log('slick init');
+  $('.img-slick').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    adaptiveHeight: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 787,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+});
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 1, 2019 10:00:00").getTime();
@@ -57,8 +97,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countdown-clock").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countdown-clock").innerHTML = "(" + days + " days " + hours + " hours "
+  + minutes + " minutes to go!)";
 
   // If the count down is finished, write some text 
   if (distance < 0) {

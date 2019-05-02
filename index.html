@@ -9,6 +9,8 @@
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo|Alice" rel="stylesheet">
 
@@ -19,121 +21,131 @@
 	<section id="header" class="">
 		<div class="container">
 			<h2>Together with our families,<br>we would like to invite you to our wedding</h2>
-			<h1>Sara & Farhan</h1>
-			<h2>1 December 2019 | <span class="nowrap">Dewan Merak Kayangan</span></h2>
+			<h1>Farhan &amp; Sara</h1>
+			<h2>1 December 2019<br>Dewan Merak Kayangan</h2>
+			<a href="#rsvp-guestbook"><div class="button is-medium blue">RSVP NOW</div></a>
 		</div>
 		
 	</section>
-	<section id="wedding">
-		<div class="container has-text-center">
-			<h3>Wedding Reception</h3>
+	<section id="wedding" class="bordered">
+		<div class="container">
+			<h3 class="has-text-centered decorative-title">Wedding Reception</h3>
 
-			<h4>Reception agenda</h4>
-			<p>12.00pm - Arrival of guests</p>
-			<p>12.30pm - Bride and Groom arrival</p>
-			<p>12.40pm - Lunch is served</p>
-			<p>3.00pm - Thank you!</p>
-
-			<h4>Location</h4>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	
-			<p>Dewan Merak Kayangan, Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
-
-			<h4>Dress Code</h4>
-			<p>Smart Casual</p>
-
-			<a href="#rsvp-guestbook"><div class="button is-medium blue">I want to RSVP</div></a>
-		</div>
-	</section>
-	<section id="about-us" class="bg-arch dark">
-		<div class="container has-text-center">
-			<h3>About the couple</h3>
-			<div class="columns">
-				<div class="column is-6">
-					<div class="img img--farhan"></div>
-					<h4>Farhan</h4>
-					<p>Loves to write, hates to read.</p>
+			<div class="columns agenda">
+				<div class="column is-12 has-text-centered">
+					<div class="is-group">
+						<h4>Date &amp; Time</h4>
+						<p class="is-size-5">Sunday 1 December, 2019 at 12.00pm</p>
+						<span id="countdown-clock" class="has-text-center"></span>
+					</div>
+					<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar</div></a>
 				</div>
+
+				
+			</div>
+			<hr>
+
+			<div class="columns location has-text-centered has-text-left-tablet">
 				<div class="column is-6">
-					<div class="img img--sara"></div>
-					<h4>Sara</h4>
-					<p>Loves to play games.</p>
+					<div class="is-group">
+						<h4>Location</h4>
+						<p>Dewan Merak Kayangan, Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+					</div>
+					<iframe class="is-hidden-tablet is-group" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8"><div class="button is-normal">Open in Google Maps</div></a>
+				</div>
+				<div class="column is-6 is-hidden-mobile">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
+
+			<hr>
+
+			<div class="columns has-text-centered has-text-left-tablet">
+				<div class="column is-6">
+					
+
+					<h4>Reception Agenda</h4>
+					<ul>
+						<li>12.00pm - Arrival of guests</li>
+						<li>12.30pm - Bride and Groom arrival</li>
+						<li>12.40pm - Lunch is served</li>
+						<li>3.00pm - Thank you!</li>
+					</ul>
+				</div>
+				<div class="column is-6">
+					<div class="is-group">
+					<h4>Dress Code</h4>
+					<p>Smart Casual</p>
+					</div>
+					<a href="#rsvp-guestbook"><div class="button is-medium blue">RSVP NOW</div></a>
+
+				</div>
+			</div>
+
+			
+
 		</div>
 	</section>
-	<section>
-		<div id="countdown" class="container">
-			<h3 class="has-text-center">Counting Down</h3>
-			<div id="countdown-clock" class="has-text-center"></div>
-		</div>
-	</section>
+
 	<section id="rsvp-guestbook" class="bg-arch dark">
 		<div id="rsvp" class="container">
-			<h3 class="has-text-center">RSVP</h3>
+			<h3 class="has-text-centered decorative-title">RSVP Form</h3>
+			<p class="is-size-5 has-text-centered">
+				Please fill out the form below to RSVP to our joyous event.<br>
+				You are welcomed to bring a +1, or even your children if it's more convenient for you. Just let us know in the form below so we can allocate a spot for them.
+			</p>
 			<div class="form">
 
-				<div class="columns">
+				<div class="columns is-multiline">
 					<div class="column is-6 field">
-					  <label class="label">Name</label>
+					  <label class="label">Tell me your name</label>
 					  <div class="control">
-					    <input class="input" type="text" placeholder="Name">
+					    <input class="input" type="text" placeholder="David Tennant">
+					  </div>
+					</div>
+
+					<div class="column is-6 field">
+					  <label class="label">Any additional guests? Who are they?</label>
+					  <div class="control">
+					    <input class="input" type="text" placeholder="Yes, my spouse">
 					  </div>
 					</div>
 
 					<div class="column is-6 field">
 						<label class="label">Which group are you from?</label>
-						  <div class="control">
-						    <div class="select">
-						      <select>
-						        <option value="">Choose one</option>
-						        <option value="Farhan's friend">Groom's friends/colleague</option>
-						        <option value="Farhan's family">Groom's family</option>
-						        <option value="Sara's friend/colleague">Bride's friends/colleague</option>
-						        <option value="Sara's family">Bride's family</option>
-						        <option value="Sara's family">Others</option>
-						      </select>
-						    </div>
-						  </div>
-					  <!-- <label class="label">Email (optional)</label>
-					  <div class="control">
-					    <input class="input" type="email" placeholder="Email">
-					  </div> -->
+						<div class="control">
+							<div class="select is-expanded">
+								<select>
+									<option value="">Choose one</option>
+									<option value="Farhan's friend">Groom's friends/colleague</option>
+									<option value="Farhan's family">Groom's family</option>
+									<option value="Sara's friend/colleague">Bride's friends/colleague</option>
+									<option value="Sara's family">Bride's family</option>
+									<option value="Sara's family">Others</option>
+								</select>
+							</div>
+						</div>
 					</div>
-				</div>
-				
 
-				<div class="field">
-				  <label class="label">Which group are you from?</label>
-				  <div class="control">
-				    <div class="select">
-				      <select>
-				        <option value="">Choose one</option>
-				        <option value="Farhan's friend">Groom's friends/colleague</option>
-				        <option value="Farhan's family">Groom's family</option>
-				        <option value="Sara's friend/colleague">Bride's friends/colleague</option>
-				        <option value="Sara's family">Bride's family</option>
-				        <option value="Sara's family">Others</option>
-				      </select>
-				    </div>
-				  </div>
-				</div>
+					<div class="field column is-12">
+					  <label class="label">Any requests? We'll try to meet them, but we apologize if we can't!</label>
+					  <div class="control">
+					    <textarea class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
+					  </div>
+					</div>
 
-				<div class="field">
-				  <label class="label">Any requests? We'll try to meet them, but we apologize if we can't!</label>
-				  <div class="control">
-				    <textarea class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
-				  </div>
 				</div>
 
 				<div class="field is-grouped">
-				  <div class="control">
+				  <div class="control margin-auto">
 				    <button class="button is-link">Submit</button>
 				  </div>
 				</div>
 			</div>
 		</div>
 		<!-- <div id="guestbook" class="container">
-			<h3 class="has-text-center">Guestbook</h3>
+			<h3 class="has-text-centered">Guestbook</h3>
 			<div class="form">
 
 				<div class="columns">
@@ -167,7 +179,48 @@
 			</div>
 		</div> -->
 	</section>
+
+	<section id="gallery">
+		<div class="container">
+			<h3 class="has-text-centered decorative-title">Media Gallery</h3>
+			<div class="img-slick">
+				<div><a target="_blank" href="https://lh3.googleusercontent.com/pyvOXHUwrZ20gW2RohsAeN9HxY-ekYHb9o3Eh7mJZDrwjCGYmRQ0wre6AyRieuOFXAsWvBNIykymL0VLph1yuP15b7uRjgnnWxyrZm-wg0OwWpDZAdNyD0n4xRezL1S0IiulTQEFpGthd9ilX-RTYwy5FHw1BoJAmJK_TZdfczyj79FkpVsrr85Ii4sUNtFCoY-3eTxcfoz7cN-9GfNDvs-Q8ZaVh2K9qB43XU580b_aNnTWRoRtV-6GkdMfX8bVJulwGK5qASR64QrCaLPVEmpK4S05NcXgrmsGOfcn1rF4_Gk6TkYKI4RVvTKChpckrGAS3rKAD5CQdTw3Of3H9s3HG05BjghKOIF7RhF3l6LOQgNLzUjdyxcxq0lDImvNHNbwoJByKu4QYWtdMvr4BVJjz42GYg5nUkxUfddJ3f7OryBIcRnwGx5LyqjnOOUjJXC5d0NRF3zzv2hUoLqSTaK0DfsBZ_m-l2kKaxH5ylutYkf23JAW_lAJcVkE67-7ICLYaIsNv2oUzCfM9pSVKTmHW74RJ97iqY9JmV6ysE6pVhH6erxhSfSOJyeh6G2TGIF_2ZctebAncCkxmKnKVm-CPB2Stuw3EmPhIcItkV2GfCg8qMJ3IoZmjIxO2V5x_zAsW96IhXZTptgifjzjxJ1CpDybmvEuR2FRwEst-AWJAszPB898a6AfN6g7IvSo6oQiQeEiJ5Ya8c1_i6P-K_CN2g=w1152-h1534-no"><img src="https://lh3.googleusercontent.com/pyvOXHUwrZ20gW2RohsAeN9HxY-ekYHb9o3Eh7mJZDrwjCGYmRQ0wre6AyRieuOFXAsWvBNIykymL0VLph1yuP15b7uRjgnnWxyrZm-wg0OwWpDZAdNyD0n4xRezL1S0IiulTQEFpGthd9ilX-RTYwy5FHw1BoJAmJK_TZdfczyj79FkpVsrr85Ii4sUNtFCoY-3eTxcfoz7cN-9GfNDvs-Q8ZaVh2K9qB43XU580b_aNnTWRoRtV-6GkdMfX8bVJulwGK5qASR64QrCaLPVEmpK4S05NcXgrmsGOfcn1rF4_Gk6TkYKI4RVvTKChpckrGAS3rKAD5CQdTw3Of3H9s3HG05BjghKOIF7RhF3l6LOQgNLzUjdyxcxq0lDImvNHNbwoJByKu4QYWtdMvr4BVJjz42GYg5nUkxUfddJ3f7OryBIcRnwGx5LyqjnOOUjJXC5d0NRF3zzv2hUoLqSTaK0DfsBZ_m-l2kKaxH5ylutYkf23JAW_lAJcVkE67-7ICLYaIsNv2oUzCfM9pSVKTmHW74RJ97iqY9JmV6ysE6pVhH6erxhSfSOJyeh6G2TGIF_2ZctebAncCkxmKnKVm-CPB2Stuw3EmPhIcItkV2GfCg8qMJ3IoZmjIxO2V5x_zAsW96IhXZTptgifjzjxJ1CpDybmvEuR2FRwEst-AWJAszPB898a6AfN6g7IvSo6oQiQeEiJ5Ya8c1_i6P-K_CN2g=w1152-h1534-no"></a></div>
+				<div><img src="https://lh3.googleusercontent.com/0qcNDkFDKiM8D0e3GzXuuGkApkkqYPAnEQnXnPNI58U9xvUXPn43ubU10bKnqDVWnfe4bYSvMvJky2L29rp0jBf5vdn7qVFaP5Ye3CcyoleVb46LzyweRwwnprqp_-ZI_nGjYteocG4Zoh6JGnlUMh_M_gJ3a1ZcbPef2zOZcGp7NB_69Ti82BSZXNayencTv-m4puhHoynbslQPBCjpFtOMczBf9mCYGChefAB0-9j69VzQrWnPuCG_07aPXj8Eb5z7MErGqNeBBFgfkK0-8WrwCtR89meI2QqjxTJbpjnZfl2sU7O90R4eNutuZCcTmnCCjtSYKHX5Qu727q_SYXhD_yqXGNemJkoY_aHm-cEYM3NdCKjvFdZLDlxUhGSHg9fcU0RRA7PwQH-8LH_ihonevr4IqN3e6FTlWYlW8mc2yCX0pGLdqJHr4aID0ScLOJvOaJDjrSW-_gs7GkwqtR8IKq4AaXj5_3tPhmYG-d_2n5_ZP4LgeNv-AOa6ZirGp_361sKzmdyV0LZXcqi_J492J0PziwoMl6BaiAkUvzwm-nDOnP73xECz7gvU8Xy9vCIsaGBqvZoOmN8CCwtf0pjEW6cD9FEtc0hWNkAsnk3NjH2pqoIm2OSZtpk5WXheeQfTF5VG9J5C10zkLhgLz9ruz8WjJVQlOJEBpcgSVv4B0Z7sI9Ab9ZRQr2wYq3tlXOWicIN2fhW2praCP0JJlVHudQ=s1080-no"></div>
+				<div><img src="https://lh3.googleusercontent.com/ywSZA0-G7uTi-gY-GTWZ71g2NSCwC_iB9HbaTwHufcJSBbkojnwhcv5-ubTeeQ0ZSqx8teISG9neEOlBhSXJ7MWqJyaf7SLE5dUTyse7Sgh2WF_QhfOJAzGKaOZhHZ2YRFqs2NbX45tU4-SbKPJA6cRNL4h-wtvGU1B7w7QRjamKpv3qeMimYxJpoShQfLW6quFqKhHY9dicYTtIiO1WlPKPqXSPhrAy8LjOVpp-vxrGUfFgpipSYUt4bOOyZWrLba61tl4t6t3GlFA7DRLrtMStvwQNOpbuxgIRiu1Vqz6VIh-5KxRGlI_9pUXoz2hcSoN-Es52un51TKaVmwcuUuyJzFIdBkeLSCqvP8i4Skvk-X9LKc4Mc_abxdyUYJjyjFsjjsDfc1Qs_KRopxOV5R1gSSXOlEICB2NZlZNKm_xKW5e38DULGFGe8Ks8OnLO4cO4HHzetOzlzZ-opjkSpyqPF3DkV-y-n9QrsZSK1Eeu6c8xwl8tiEF8-0UYMYr6p-5y8e2zXdQ9H1sGTE-CX0HlYEX1Y_IpPRunKx9r7UWY4-WZ4NPyaGfDTqatEVJbCXs0_Vsi4-h--Onn7YG-8Ixo92sYhUXQDwRQNoJxE4jEfttM0jkcJFVu2nQ9ePyj1MUkQJKCZZY3fV3h6IWO32Ianp7SJsreZC6R7MsUhiISz4P-RztrRLVTEnffgHhdM6yVsyqYW8K8G74me4piEmW2Tw=w2046-h1534-no"></div>
+				<div><img src="https://lh3.googleusercontent.com/a9WYcrpCMCXa0WmEkcKGG_wwifF9WotZ_N9BURqgUamOgOX5Y5RuGPl16hhiNbL9X1Q6VaNjT3msZIWViK4lfIXj0ZdjJOq_wgyZ4uOWrLWOUTR0_7qZD5GYCAhtcWOmyUU-vn_QBjzQ0om29C27JyHAzhfTbHc3xHZsVTGkxwmS2Z8edlR3Xl96_7R_5WM4FmejVK6X1JalJljWIcMoZ1quDqAPI4_PpT5anIxTBevzouJBYdDcLOmmtriHSXvetj39aDWzqwgtdJol7JNiSitZKcALVBqMVaXdREYvg__NanGg0ZlCJMvEeDgk2N6HlVKf4qoM8_x-ow2zlCzMDXnHF3PBOvR9-Fj76oa7r8yWeeCJXn_1uP6I1iTG8q9Vo3pIgL2x1DCo91H02xwI-0wv_mx_bziXH9RcyIW0ZT7XefdMJzGo7Yl8BhL7FBLaxcp9FaO7rES7VtURBdbrDByfMZRLWLA5zpr2Q_X7auSZxmpNqCnapbtNB4ZdZfuRxQRwRvvzYi2_m40m22kS1jUf94JYOAp7g96DDiBy1SACSrmzxbFgtctBkPxnrZz9NaRw6IrLshQU0QYhv-kR8j1ywL7MQ4Css_rHpfoLUjuPWGwWZ7-kpDwzZnEs-cjbdHs7EbSsI2fHf8vNgpPAUVvHUHDtH7mMjISfZ-WwLJvSBO2A8nAihGy0PwWuqAyl74gUcHkCTHb3DA6eV4dE5nx4iw=w1600-h1200-no"></div>
+				<div><img src="https://lh3.googleusercontent.com/REkvCNJgXWrohehv9SZ1unDtDp-ZQNbrco7FQhe3UG8eEXvGXOJRWWfC3tDCbOek1MF4LwPRrv5LXhlTAUJ9rYY258Yl2-W9DYDUPXqxk-OkFXq8flVELW-7jQHPz6ZKosJDrMYNr1hJiZBUbdPji4SM56Q0ToqGO09e2phfS4gcXXK7aae5NicT7fbc1G5qWrfh1yRZbr2UtkvbGFGNbjSm_WDy_F5HK0U9QmQjClJvEcyfBEbCA3YVyCpXTe6V1S_Ql4ykDhyHR004dbe67Ti1uMWdFkb8QvlY73CRmaNpYADNDBg83v-OLoRDpgKSOu68gSvgO19zBK3I7mAzaQ4_uqP9LN7_hq1XIyxzhWyZbbisDszoElwTb-tr9bhpL3GP8-xrxB-HiRkoEVojIdzl2gVTmYl8SMSa35dtnWzki9td0N8EBegS3GrOyM7DlcQIlm4JaHHLwQPgHIBh6INABpM5LtOKCBCNUJKgg5PgPCJbAy6U6FqonpPxvQ8EwEjrYdn3fdSLbCa2E3xH6JHLrvznjjtap4eIId7EFH_dy2efk81in0i_0TgCXLjBMOjk-CWfWCJYMb1-KKB4yOgykBbkc1Gzx3CmcSzuUN2u6ybYWcu89j45ZFclb0XapqaA8z6ADOXclBG3HCqxfyLQboPis0Csl8SRFiy7SRqS3pPMDDZ1TOr7-KkfmddfXflyikwC8LwFGXOJ3UkypY_w6w=w1152-h1534-no"></div>
+				<div><img src="https://lh3.googleusercontent.com/RfOkfntEWkbZ-p0BqR1NN-qli-64KlcGXwuBp6wXEHyUmu8TNdY4wj8yVDbFF1PahOegtGEEYbG2ehktrXGBEwiwIecE5fG3DiE-TNdLzfCNRpMqoh4mdsiy65y_G_siYhkIQfSrZov145CSIssf4UOq-cPHl2sHNdbLOpz4oXLbZOh1L38ucmjXMjXk9A6ZCNHe2CjZHZKkCXt-H-9PXCPw9wFeZBr8kQjyjBuzXhSw-096Fjnus10w-jPBA4_T_sDyoKQ1EpGpcULjlIHrCf7aL7aVtcPzoFbAvCSkzU58wMiyzTu0PVQ1XAWuZcOgiCFLPQd5iCSR1aKYMrtg6Wj7FXR1UiHZIx7GR5-SOzguzEiqohLInLvNH37QaPJl0Eth-Q06E_sM0tLZwm0s0mAAxHVYzqrhdku0nAEJHkn2aa88e5Yy0VwugVflw9D5kzLTJQTb5ReaNJJLlMqEMbo-ZOtPNIt3nXhXMHRAQq4XEhsYjYvjSC5rGPA490JimK0gbkxGDXoPpTvK_hU-AXPoFetbsggxOf-cSEaR39eu0zJ657FeV7UigsbiRXVt9B_8ugLVlrHKz1IgHovTZnz4rZ7Z1X2iqrfnmYr6z8gLm0dhNSlnvrBykbidHubPXZje5lQRew8h3RbWMJcwWAtySVHAdU8k0ORL0w0YO-xk9lEG7s7eLckRgjm9oGFnRl4GSi1yT7hSd8lFlWd__c9tbw=w2560-h1440-no"></div>
+				<div>
+					<img src="https://lh3.googleusercontent.com/T1KEsMdJFHtCK5e_io_dPvauz94U0_LkJTVZWaE5Pg2PypmcLesTX069Lt04NVI5-HFJ5d1A2RTDXPQE6QVe5Vo1-9pct-C7Yf2IO7wMggl9Yhkyr398qH5a1hDY00_GchSo-08CA7p_fb9y54LSgracCtTky0jbdiV3VjgZhJXe8N8mxtEFoyTQ1m6Zs9glud6wUS96wso31qBJjyc-IRw28fwwZ11BL08SP3aRHFIBeAQEvIR_gYjxreS9N8ATmzOLRlRzcQ0Jnb_mGZH12dGr7O5g8ftTyRq0w0WQ3rIjJ8QOxxI7T9BrYk3dJKNbnvlIJGK6tBuxQve51M6YRCUCGKHkTpr0zCs44f6ePSUMnQMjhJDlKcoK9NUakAjoQr06mKAYaIFydO00jPgEcZC5Snw0FXGZBtBFk0q1vFIEazhvdBgxNeY_ySeD-YSYlp7K2Endg0eNVWVF05enQ-rsAElk4ScO2SQ9yasCoqXKnzXsxrZP4ygyurFWZx1z6xE0u6bnUmWT3tel1lKmBOm3IpkL28QRNWJfioJc9fM4l-BNASLKxt9FyAPiv63hShnEPrrjzZvIsAV3UHMozxIAtH-LcLxjrg2mhhGlZZvmUyFIxzW2v-aCUeT2ockSFk31JhmgKZKgI8IT_Xcu1KEzLhK3mLQ9pX32i-IfvA29uxBTrtpLW4hQBe_TRoBaFkJxDbaTxMno3WIxvEsV2jDzEA=w864-h1534-no">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about-us" class="bg-arch dark">
+		<div class="container has-text-centered">
+			<h3 class="decorative-title">The Couple</h3>
+			<div class="columns">
+				<div class="column is-6">
+					<div class="img img--farhan"></div>
+					<h4>Farhan</h4>
+					<p>Loves to write, hates to read.</p>
+				</div>
+				<div class="column is-6">
+					<div class="img img--sara"></div>
+					<h4>Sara</h4>
+					<p>Loves to play games.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
 	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<!-- 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="script/slick/slick.min.js"></script>
 	<script src="script/script.js"></script>
+	
 </body>
 </html>
