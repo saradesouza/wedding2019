@@ -106,3 +106,19 @@ var x = setInterval(function() {
     document.getElementById("countdown-clock").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+//Hide Show based on time
+window.setInterval(function(){
+
+  var current = new Date();
+  var wedding = new Date("December 1, 2019 12:00:00")
+
+  if(current.getTime()>wedding.getTime()){
+    $('#rsvp, #cta-before').hide();
+    $('#reception-activity, #guestbook, #cta-after').show();
+  }
+  else {
+      $('#rsvp, #cta-before').show();
+    $('#reception-activity, #guestbook, #cta-after').hide();
+   }
+});

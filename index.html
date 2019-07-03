@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Sara x Farhan</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
@@ -13,19 +12,28 @@
   <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo|Alice" rel="stylesheet">
-
-
 </head>
 
 <body>
 	<section id="header" class="">
-		<div class="container">
-			<h2>Together with our families,<br>we would like to invite you to our wedding</h2>
-			<h1>Farhan &amp; Sara</h1>
+		<div class="navigation-bar">
+			<span><a href="#wedding">Reception Info</a></span>
+			<span><a href="#about-us">About Us</a></span>
+			<div class="sprite coat-of-arms"></div>
+			<span><a href="#rsvp">RSVP Now</a></span>
+			<span><a href="#wedding">e-Guestbook</a></span>
+		</div>
+		<div class="container">		
+			<h2>Together with our families,<br>we would like to invite you to our wedding</h2>		
+			<div class="sprite farhan-sara"></div>		
 			<h2>1 December 2019<br>Dewan Merak Kayangan</h2>
-			<a href="#rsvp-guestbook"><div class="button is-medium blue">RSVP NOW</div></a>
-			<a href="#reception-activity"><div class="button is-medium blue">Upload photos</div></a>
-			<a href="#guestbook"><div class="button is-medium blue">Sign Guestbook</div></a>
+			<div id="cta-before">
+				<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
+			</div>
+			<div id="cta-after">
+				<a href="#guestbook"><div class="button is-medium gold">Sign Guestbook</div></a>
+				<a href="#reception-activity"><div class="button is-medium gold">Upload Photos</div></a>
+			</div>
 		</div>
 		
 	</section>
@@ -40,13 +48,12 @@
 						<p class="is-size-5">Sunday 1 December, 2019 at 12.00pm</p>
 						<span id="countdown-clock" class="has-text-center"></span>
 					</div>
+					<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
+					<br>
 					<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar</div></a>
 				</div>
-
-				
 			</div>
 			<hr>
-
 			<div class="columns location has-text-centered has-text-left-tablet">
 				<div class="column is-6">
 					<div class="is-group">
@@ -60,13 +67,9 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
-
 			<hr>
-
-			<div class="columns has-text-centered has-text-left-tablet">
-				<div class="column is-6">
-					
-
+			<div class="columns has-text-centered">
+				<div class="column is-12">
 					<h4>Reception Agenda</h4>
 					<ul>
 						<li>12.00pm - Arrival of guests</li>
@@ -75,25 +78,20 @@
 						<li>3.00pm - Thank you!</li>
 					</ul>
 				</div>
-				<div class="column is-6">
+				<!-- <div class="column is-6">
 					<div class="is-group">
 					<h4>Dress Code</h4>
 					<p>Smart Casual</p>
 					</div>
-					<a href="#rsvp-guestbook"><div class="button is-medium blue">RSVP NOW</div></a>
-
-				</div>
+				</div> -->
 			</div>
-
-			
-
 		</div>
 	</section>
 
 	<section id="rsvp-guestbook" class="bg-arch dark">
 		<div id="rsvp" class="container">
 			<h3 class="has-text-centered decorative-title">RSVP Form</h3>
-			<p class="is-size-5 has-text-centered">
+			<p class="is-size-6 has-text-centered">
 				Please fill out the form below to RSVP to our joyous event.<br>
 				You are welcomed to bring a +1, or even your children if it's more convenient for you. Just let us know in the form below so we can allocate a spot for them.
 			</p>
@@ -101,21 +99,21 @@
 
 				<div class="columns is-multiline">
 					<div class="column is-6 field">
-					  <label class="label">Tell me your name</label>
+					  <label class="label">Name</label>
 					  <div class="control">
 					    <input class="input" type="text" placeholder="David Tennant">
 					  </div>
 					</div>
 
 					<div class="column is-6 field">
-					  <label class="label">Any additional guests? Who are they?</label>
+					  <label class="label">Bringing a +1? Who?</label>
 					  <div class="control">
 					    <input class="input" type="text" placeholder="Yes, my spouse">
 					  </div>
 					</div>
 
 					<div class="column is-6 field">
-					  <label class="label">Contact details (So I can tell you your table #)</label>
+					  <label class="label">Your Email or Phone Number (Optional)</label>
 					  <div class="control">
 					    <input class="input" type="text" placeholder="Phone number or E-mail address">
 					  </div>
@@ -127,10 +125,11 @@
 							<div class="select is-expanded">
 								<select>
 									<option value="">Choose one</option>
-									<option value="Farhan's friend">Groom's friends/colleague</option>
-									<option value="Farhan's family">Groom's family</option>
-									<option value="Sara's friend/colleague">Bride's friends/colleague</option>
-									<option value="Sara's family">Bride's family</option>
+									<option value="Farhan's friend">Farhan's friends/colleague</option>
+									<option value="Farhan's family">Farhan's family</option>
+									<option value="Farhan's family">iMoney Colleagues</option>
+									<option value="Sara's friend/colleague">Sara's friends/colleague</option>
+									<option value="Sara's family">Sara's family</option>
 									<option value="Sara's family">Others</option>
 								</select>
 							</div>
@@ -138,7 +137,7 @@
 					</div>
 
 					<div class="field column is-12">
-					  <label class="label">Any requests? We'll try to meet them, but we apologize if we can't!</label>
+					  <label class="label">Any requests? (We'll try to meet them, but we apologize if we can't!)</label>
 					  <div class="control">
 					    <textarea class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
 					  </div>
@@ -148,7 +147,7 @@
 
 				<div class="field is-grouped">
 				  <div class="control margin-auto">
-				    <button class="button is-link">Submit</button>
+				    <button class="button is-medium gold is-link">Submit</button>
 				  </div>
 				</div>
 			</div>
@@ -185,7 +184,7 @@
 
 				<div class="field is-grouped">
 				  <div class="control margin-auto">
-				    <button class="button is-link">Submit</button>
+				    <button class="button is-medium gold is-link">Submit</button>
 				  </div>
 				</div>
 			</div>

@@ -1,5 +1,27 @@
 $navy-blue: #003366;
 $grey: #727272;
+$gold: #f2b826;
+
+.sprite {
+	display: block;
+	&.farhan-sara {	
+		background-image: url('../img/farhan-sara-white.svg');
+		background-size: contain;
+	    width: 300px;
+	    height: 225px;
+	    background-repeat: no-repeat;
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	}
+	&.coat-of-arms {
+		background-image: url('../img/coat-of-arms.svg');
+		background-size: contain;
+	    width: 95px;
+	    height: 100px;
+	    background-repeat: no-repeat;
+	}
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	color: $navy-blue;
@@ -11,11 +33,12 @@ h1 {
 	letter-spacing: 0.5rem;
 }
 h2 {
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
+	margin-bottom: 20px;
 }
 h3 {
 	font-size: 2rem;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	line-height: 2.1rem;
 }
 h4 {
@@ -28,7 +51,8 @@ h4 {
 
 hr {
 	background-color: transparent;
-	border-top: 1px dashed lighten($grey, 45%);
+	border-top: 2px solid $gold;
+	opacity: 0.2;
 }
 
 p {
@@ -39,6 +63,8 @@ p {
 	height: auto;
 	white-space: unset;
 	line-height: 1.4rem;
+	margin-bottom: 15px;
+	font-family: 'Aleo', serif;
 }
 
  /* the slides */
@@ -76,7 +102,7 @@ p {
 		font-size: 5rem;
 		position: absolute;
 		margin: 0 auto;
-		color: $grey;
+		color: $gold;
 		opacity: 0.1;
 		left:0;
 		right:0;
@@ -99,19 +125,30 @@ p {
 			border-color: transparent;
 		}
 	}
+	&.gold {
+		background-color: $gold;
+		color: $navy-blue;
+		border-color: transparent;
+		&:hover {
+			background-color: lighten($gold, 10%);
+			border-color: transparent;
+		}
+	}
 }
 
 .dark {
 	background-color: $navy-blue;
 	color: white;
-	h1, h2, h3, h4, h5, h6, label {
-		color: white;
+	h1, h2, h3, h4, h5, h6 {
+		color: $gold;
 	}
+	label { color: white; }
 }
 
 .bordered {
 	margin: 20px;
-    border: 2px solid lighten($grey, 50%);
+    border: 2px solid $gold;
+    border-radius: 1px;
 }
 
 .bg-arch {
@@ -141,17 +178,24 @@ body {
 	padding: 50px 20px;
 }
 
+
+
+
+
+
+
 #header {
-	// background-color: lighten($grey, 20%);
+	// background-color: lighten($gold, 20%);
 	min-height: 500px;
-	background-image: url('../img/headerbanner.jpg');
+	background-image: url('../img/headerbanner2.jpg');
 	background-size: cover;
 	background-position: center;
 	text-align: center;
-	display: flex;
-	align-items: center;
 	color: white;
 	text-transform: uppercase;
+	.container {
+		padding-top: 20px;
+	}
 	h1 {
 		font-size: 4rem;
 		color: white;
@@ -160,6 +204,12 @@ body {
 	h2 {
 		margin-top: -10px;
 		color: white;
+	}
+	.navigation-bar {
+		padding: 20px;
+		display: flex;
+	    align-items: center;
+	    justify-content: space-around;
 	}
 }
 
@@ -171,7 +221,9 @@ body {
 	}
 	h4 {
 		font-size: 1.4rem;
-		text-transform: uppercase;
+		// text-transform: uppercase;
+		color: $gold;
+		opacity: 1;
 	}
 	.img {
 		content: "";
@@ -195,7 +247,8 @@ body {
 	.form {
 		margin-top: 45px;
 		padding: 20px;
-		border: 1px solid white;
+		border: 2px solid $gold;
+		border-radius: 1px;
 	}
 }
 
@@ -226,4 +279,8 @@ body {
 		margin-top: -17px;
 		font-size: 7rem;
 	}
+}
+
+#cta-before, #cta-after, #rsvp, #reception-activity, #guestbook {
+	display: none;
 }
