@@ -29,7 +29,9 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  line-height: 2.1rem; }
+  line-height: 2.1rem;
+  z-index: 5;
+  position: relative; }
 
 h4 {
   font-size: 1.6rem;
@@ -79,17 +81,20 @@ p {
   margin: 0 auto; }
 
 .decorative-title:after {
-  content: "&";
+  content: "";
+  background-image: url("../img/ring.svg");
+  width: 70px;
+  height: 52px;
+  background-size: contain;
   font-size: 5rem;
   position: absolute;
-  margin: 0 auto;
-  color: #f2b826;
-  opacity: 0.1;
+  opacity: 0.3;
   left: 0;
   right: 0;
+  top: -10px;
   margin-left: auto;
   margin-right: auto;
-  z-index: 0; }
+  z-index: -1; }
 
 .button {
   padding-left: 1.5em;
