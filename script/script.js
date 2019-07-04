@@ -113,12 +113,12 @@ window.setInterval(function(){
   var current = new Date();
   var wedding = new Date("December 1, 2019 12:00:00")
 
-  if(current.getTime()>wedding.getTime()){
-    $('#rsvp, #cta-before').hide();
-    $('#reception-activity, #guestbook, #cta-after').show();
+  if(current.getTime()>wedding.getTime()){ //after wedding
+    $('#rsvp, #cta-before, .prewedding').hide();
+    $('#upload, #guestbook, #cta-after, .postwedding').show();
   }
-  else {
-      $('#rsvp, #cta-before').show();
-    $('#reception-activity, #guestbook, #cta-after').hide();
+  else { //prewedding
+      $('#rsvp, #cta-before, .prewedding').show();
+    $('#upload, #guestbook, #cta-after, .postwedding').hide();
    }
 });

@@ -3,13 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sara x Farhan</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Farhan x Sara 2019</title>
+  <meta name="description" content="Farhan x Sara">
+  <meta name="author" content="Farhan Sara">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" 
-      type="image/png"
-      href="img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
@@ -18,50 +16,74 @@
 </head>
 
 <body>
-	<section id="header" class="">
-		<div class="navigation-bar">
-			<span><a href="#wedding">Reception Info</a></span>
-			<span><a href="#about-us">About Us</a></span>
+	<section id="header">
+		<div class="navigation-bar prewedding">
+			<div><a href="#wedding" class="white">Reception</a></div>
+			<div><a href="#about-us" class="white">About Us</a></div>
 			<div class="sprite coat-of-arms"></div>
-			<span><a href="#rsvp">RSVP Now</a></span>
-			<span><a href="#wedding">e-Guestbook</a></span>
+			<div><a href="#rsvp" class="white prewedding">RSVP Now</a></div>
+			<div><a href="#faq" class="white prewedding">FAQ</a></div>
+		</div>
+		<div class="navigation-bar postwedding">
+			<div><a href="#wedding" class="white">Reception Info</a></div>
+			<div><a href="#about-us" class="white">About Us</a></div>
+			<div class="sprite coat-of-arms"></div>
+			<div><a href="#guestbook" class="white postwedding">e-Guestbook</a></div>
+			<div><a href="#photos" class="white postwedding">Upload Photos</a></div>
 		</div>
 		<div class="container">		
-			<h2>Together with our families,<br>we would like to invite you to our wedding</h2>		
+			<h2>
+				Together with our families,
+				<br>we would like to invite you to our wedding reception
+			</h2>		
 			<div class="sprite farhan-sara"></div>		
-			<h2>1 December 2019<br>Dewan Merak Kayangan</h2>
+			<h2>
+				1 December 2019
+				<br>
+				<i class="sprite location white"></i>
+				<a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8" target="_blank" class="white">Dewan Merak Kayangan</a>
+			</h2>
 			<div id="cta-before">
-				<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
+				<a href="#rsvp-guestbook">
+					<div class="button is-medium gold">RSVP Now</div>
+				</a>
 			</div>
 			<div id="cta-after">
-				<a href="#guestbook"><div class="button is-medium gold">Sign Guestbook</div></a>
-				<a href="#reception-activity"><div class="button is-medium gold">Upload Photos</div></a>
+				<a href="#guestbook">
+					<div class="button is-medium gold">Sign Guestbook</div>
+				</a>
+				<a href="#reception-activity">
+					<div class="button is-medium gold">Upload Photos</div>
+				</a>
 			</div>
 		</div>
-		
 	</section>
+
 	<section id="wedding" class="bordered">
 		<div class="container">
 			<h3 class="has-text-centered decorative-title">Wedding Reception</h3>
-
 			<div class="columns agenda">
 				<div class="column is-12 has-text-centered">
-					<div class="is-group">
+					<div class="wedding--time is-group">
+						<i class="icon calendar margin-auto"></i>
 						<h4>Date &amp; Time</h4>
 						<p class="is-size-5">Sunday 1 December, 2019 at 12.00pm</p>
-						<span id="countdown-clock" class="has-text-center"></span>
+						<div id="countdown-clock" class="prewedding has-text-center"></div>
 					</div>
-					<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
-					<br>
-					<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar</div></a>
+					<div class="wedding--cta prewedding">
+						<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
+						<br>
+						<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar</div></a>
+					</div>
 				</div>
 			</div>
 			<hr>
 			<div class="columns location has-text-centered has-text-left-tablet">
 				<div class="column is-6">
 					<div class="is-group">
-						<h4>Location</h4>
-						<p>Dewan Merak Kayangan<br>Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+						<i class="icon location"></i>
+						<h4>Reception Location</h4>
+						<p><strong>Dewan Merak Kayangan</strong><br>Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
 					</div>
 					<iframe class="is-hidden-tablet is-group" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
 					<a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8"><div class="button is-normal">Open in Google Maps</div></a>
@@ -73,12 +95,13 @@
 			<hr>
 			<div class="columns has-text-centered">
 				<div class="column is-12">
+					<i class="icon agenda margin-auto"></i>
 					<h4>Reception Agenda</h4>
 					<ul>
-						<li>12.00pm - Arrival of guests</li>
-						<li>12.30pm - Bride and Groom arrival</li>
-						<li>12.40pm - Lunch is served</li>
-						<li>3.00pm - Thank you!</li>
+						<li><strong>12.00pm</strong> - Arrival of guests</li>
+						<li><strong>12.30pm</strong> - Bride and Groom arrival</li>
+						<li><strong>12.40pm</strong> - Lunch is served</li>
+						<li><strong>3.00pm</strong> - Thank you!</li>
 					</ul>
 				</div>
 				<!-- <div class="column is-6">
@@ -95,9 +118,10 @@
 		<div id="rsvp" class="container">
 			<h3 class="has-text-centered decorative-title">RSVP Form</h3>
 			<p class="is-size-6 has-text-centered">
-				Please fill out the form below to RSVP to our joyous event.<br>
-				You are welcomed to bring a +1, or even your children if it's more convenient for you. Just let us know in the form below so we can allocate a spot for them.
+				Please fill out the online form below to RSVP to our joyous event.<br>
+				RSVP deadline is on the 31st of October.
 			</p>
+
 			<div class="form">
 
 				<div class="columns is-multiline">
@@ -155,6 +179,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div id="guestbook" class="container">
 			<h3 class="has-text-centered decorative-title">Write in our e-Guestbook</h3>
 			<p class="is-size-5 has-text-centered">
@@ -194,7 +219,136 @@
 		</div>
 	</section>
 
+	<section id="faq" class="bordered prewedding">
+		<div class="container has-text-centered">
+			<h3 class="decorative-title">FAQs</h3>
+			<div class="columns">
+				<div class="column is-8 is-offset-2">
+
+					<div class="is-group">
+						<h4>What kind of wedding is it?</h4>
+						<p>It's a sit-down lunch, so please come between 12.00pm - 12.20pm! Lunch will be served at 12.40pm right after the bride and groom march in.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>When is the RSVP date?</h4>
+						<p><strong>31st October</strong> is the latest RSVP date. Please RSVP<a href="#rsvp"> via our online RSVP form</a> or WhatsApp Sara or Farhan.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>What if I have a dietry restriction? Do you serve vegetarian/vegan options?</h4>
+						<p>Please let us know and we'll do our best to accomodate. However we apologize if we're unable to meet your requirements!</p>
+						<p>We currently have a limited amount of non-beef tables, please let us know if you'd like to be placed on them.</p>
+						<p>We have a vegan/vegetarian dish (dahl) but we cannot guarantee if it's pure vegan/vegetarian.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>What is my table number?</h4>
+						<p>We will let you know one week before the event what is your table number. Alternatively, you can find out from our usherers on the day of the event and they'll help you out.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>Can I bring a +1? How about kids?</h4>
+						<p>Yes, you absolutely can bring a +1! We can also allow you to bring your kids if it means we can have you attend our special day, <a href="#rsvp">just let us know in advance</a> so we can allocate the seats accordingly.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>Is there any dress code? Colour theme?</h4>
+						<p>The bride's family will be wearing blue and the groom's family colours is gold. If you're neither, you're welcomed to wear anything as long as it's smart casual :)</p>
+					</div>
+
+					<div class="is-group">
+						<h4>When is the nikah? (ROM)</h4>
+						<p>9.30am on the same day (1 December), same hall and venue. Only family and some close friends will be attending.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>When is the tea ceremony?</h4>
+						<p>10.30am on the same day (1 December), same hall and venue. Family members who want to be a part of this special occasion should be present by 10.15am.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>About the Venue</h4>
+						<h5>a. How do we get to Dewan Merak Kayangan?</h5>
+						<p>You need to drive, unfortunately. There is no public transport that I know of.</p>
+						<h5>b. Are there parking spaces?</h5>
+						<p>Yes, there is free parking available on site.</p>
+						<h5>c. Is Dewan Merak Kayangan wheelchair accessible? What if I have mobility issues?</h5>
+						<p>Please let us know if you are wheelchair bound or have mobility issues so we can allocate you to seating that is on ground level. The surrounding areas is wheelchair accessible, but the hall itself is split-level. </p>
+					</div>
+
+					<div class="is-group">
+						<h4>Do you have a hotel for guests? Where do you recommend I stay?</h4>
+						<p>If you are family from outside of KL, please refer to the family wedding party. If you are a regular guest, we currently don't have hotel options for you. But if you need some recommendations, please reach out to us and we can try to give you some advice.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>Can I take photos and post on social media?</h4>
+						<p>Yes you can! Our official hashtag is <strong>#FarhanSara2019.</strong> However, please be respectful and mindful when taking photographs. Please do not block or disturb the official photographer / videographer.</p>
+					</div>
+
+					<div class="is-group">
+						<h4>Who do I contact if I have any more questions?</h4>
+						<p>You may contact Sara or Farhan.</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
 	
+	<section id="upload" class="bordered">
+		<div class="container has-text-centered">
+			<h3 class="decorative-title">Share Your Photos With Us</h3>
+			<div class="columns valign-center">
+				<div class="column is-6">
+					<div class="illustration photos"></div>
+				</div>
+				<div class="column is-6">
+					<div class="is-group">
+						<!-- <h4>Upload Photos</h4> -->
+						<p>Take lots of selfies/we-fies and send it to us for us to relive the memories.</p>
+					</div>
+					<div class="columns is-1 is-variable is-mobile">
+						<div class="column is-6">
+							<i class="icon upload-cloud"></i>
+							<a target="_blank" href="https://photos.google.com/u/0/share/AF1QipPfiobLUc3AZSWXDdUnOvDP6Id2B2Bk-1Mu7MvTvmB2G9NH0k7YLKfbYeq0I0nT8A?key=UUhGekJKWDdJanBRVldpZktKLXhTWHJrdzBHM1ZB"><div class="button">Upload to Google Photos</div></a>
+						</div>
+						<div class="column is-6">
+							<i class="icon upload-whatsapp"></i>
+							<a href="https://wa.me/60172951670"><div class="button">Send via WhatsApp</div></a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="column is-6">
+					<div class="is-group">
+						<h4>Write in our eGuestbook</h4>
+						<p>Save the earth and our cupboard space! Write your well-wishes to us digitally instead.</p>
+					</div>
+					<a href="#guestbook"><div class="button">Write in<br>eGuestbook</div></a>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	
+	<section id="about-us" class="bg-arch dark">
+		<div class="container has-text-centered">
+			<h3 class="decorative-title">The Couple</h3>
+			<div class="columns">
+				<div class="column is-6">
+					<div class="img img--farhan"></div>
+					<h4>Farhan</h4>
+					<p>Gets paid to teach people how to sword.</p>
+				</div>
+				<div class="column is-6">
+					<div class="img img--sara"></div>
+					<h4>Sara</h4>
+					<p>This site took her ages to design and build.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section id="gallery" class="bordered">
 		<div class="container">
@@ -213,59 +367,7 @@
 		</div>
 	</section>
 
-	<section id="about-us" class="bg-arch dark">
-		<div class="container has-text-centered">
-			<h3 class="decorative-title">The Couple</h3>
-			<div class="columns">
-				<div class="column is-6">
-					<div class="img img--farhan"></div>
-					<h4>Farhan</h4>
-					<p>Loves to write, hates to read.</p>
-				</div>
-				<div class="column is-6">
-					<div class="img img--sara"></div>
-					<h4>Sara</h4>
-					<p>Loves to play games.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="reception-activity" class="bordered">
-		<div class="container has-text-centered">
-			<h3 class="decorative-title">I'm here at your reception.<br>Now what?</h3>
-			<div class="columns">
-				<div class="column is-6">
-					<div class="is-group">
-						<h4>Upload Photos</h4>
-						<p>Take lots of selfies/we-fies and upload it for us to remember by.</p>
-					</div>
-					<div class="columns is-mobile">
-						<div class="column is-6">
-							<a target="_blank" href="https://photos.google.com/u/0/share/AF1QipPfiobLUc3AZSWXDdUnOvDP6Id2B2Bk-1Mu7MvTvmB2G9NH0k7YLKfbYeq0I0nT8A?key=UUhGekJKWDdJanBRVldpZktKLXhTWHJrdzBHM1ZB"><div class="button">Upload to Google Photos</div></a>
-						</div>
-						<div class="column is-6">
-							<a href="https://wa.me/60172951670"><div class="button">Send via WhatsApp</div></a>
-						</div>
-					</div>
-					
-					
-				</div>
-				<div class="column is-6">
-					<div class="is-group">
-						<h4>Write in our eGuestbook</h4>
-						<p>Save the earth and our cupboard space! Write your well-wishes to us digitally instead.</p>
-					</div>
-					<a href="#guestbook"><div class="button">Write in<br>eGuestbook</div></a>
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	
-	
 	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-<!-- 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="script/slick/slick.min.js"></script>
 	<script src="script/script.js"></script>

@@ -2,6 +2,7 @@ $navy-blue: #003366;
 $grey: #727272;
 $gold: #f2b826;
 
+//Sprites
 .sprite {
 	display: block;
 	&.farhan-sara {	
@@ -20,26 +21,79 @@ $gold: #f2b826;
 	    height: 100px;
 	    background-repeat: no-repeat;
 	}
+	&.location {
+		background-image: url('../img/sprite.svg');
+		width: 9px;
+	    height: 12px;
+	    background-position: -10px 0px;
+	    background-size: 100px 38px;
+	    background-repeat: no-repeat;
+	    display: inline-block;
+	    &.white {
+	    	background-position: -10px -13px;
+	    }
+	    &.blue {
+	    	background-position: -10px -26px;
+	    }
+	}
+}
+.icon {
+	background-image: url('../img/iconography.svg');
+	background-size: 360px 60px;
+	display: block;
+	content: " ";
+	background-repeat: no-repeat;
+	height: 70px;
+	margin-bottom: -5px;
+	&.calendar {
+		background-position: -37px 0px;
+		width: 63px;
+	}
+	&.location {
+		background-position: -98px 0px;
+		width: 61px;
+	}
+	&.agenda {
+		background-position: -159px 0px;
+		width: 48px;
+	}
+	&.upload-cloud {
+		background-position: -206px 0px;
+		width: 60px;
+	}
+	&.upload-whatsapp {
+		background-position: -266px 0px;
+		width: 55px;
+	}
+}
+.illustration {
+	display: block;
+	content: " ";
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	&.photos {
+		background-image: url('../img/illus-photo.svg');
+		width: 300px;
+		height: 300px;
+	}
 }
 
 
+//Headers & Text
 h1, h2, h3, h4, h5, h6 {
 	color: $navy-blue;
 	font-family: 'Alice', serif;
 	margin-bottom: 30px;
 }
-
-h1 {
-	letter-spacing: 0.5rem;
-}
+h1 { letter-spacing: 0.5rem; }
 h2 {
 	letter-spacing: 0.2rem;
 	margin-bottom: 20px;
 }
 h3 {
-	font-size: 2rem;
+	font-size: 2.2rem;
 	// text-transform: uppercase;
-	line-height: 2.1rem;
+	line-height: 2.3rem;
 	z-index: 5;
 	position: relative;
 }
@@ -50,6 +104,20 @@ h4 {
 	line-height: 1.6rem;
 	margin-bottom: 5px;
 }
+h5 {
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
+
+a {
+	&.white {
+		color: white;
+		&:hover { text-decoration: underline; }
+	}
+}
+p { line-height: 1.4rem; }
+
+strong { color: #585858; }
 
 hr {
 	background-color: transparent;
@@ -57,47 +125,21 @@ hr {
 	opacity: 0.2;
 }
 
-p {
-	line-height: 1.4rem;
-}
-
-.button {
-	height: auto;
-	white-space: unset;
-	line-height: 1.4rem;
-	margin-bottom: 15px;
+//BODY & CONTAINER
+body {
 	font-family: 'Aleo', serif;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	color: $grey;
 }
-
- /* the slides */
-  .slick-slide {
-    margin: 0 15px;
-  }
-  /* the parent */
-  .slick-list {
-    margin: 0 -15px;
-  }
-  .slick-track {
-  display: flex;
-}
-.slick-track .slick-slide {
-  display: flex;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.select.is-expanded {
-	width: 100%;
-	select {
-		width: 100%;
-	}
-}
-
-.margin-auto {
+.container {
+	max-width: 768px;
 	margin: 0 auto;
+	padding: 50px 20px;
 }
 
+//ELEMENTS
 .decorative-title {
 	&:after {
 		content: "";
@@ -117,7 +159,13 @@ p {
 	}
 }
 
+//BUTTON
 .button {
+	height: auto;
+	white-space: unset;
+	line-height: 1.4rem;
+	margin-bottom: 15px;
+	font-family: 'Aleo', serif;
 	padding-left: 1.5em;
     padding-right: 1.5em;
 	transition: background-color 0.15s;
@@ -141,6 +189,7 @@ p {
 	}
 }
 
+//BG PANELS
 .dark {
 	background-color: $navy-blue;
 	color: white;
@@ -149,46 +198,31 @@ p {
 	}
 	label { color: white; }
 }
-
 .bordered {
 	margin: 20px;
     border: 2px solid $gold;
     border-radius: 1px;
 }
-
-.bg-arch {
-	background-image: url('../img/blue-arch.png');
-}
-
-.no-wrap {
-	white-space: nowrap;
-}
-
-.is-group {
-	margin-bottom: 20px;
-}
+.bg-arch { background-image: url('../img/blue-arch.png'); }
 
 
+//HELPER CLASSES
+.valign-center { align-items: center; }
+.margin-auto { margin: 0 auto; }
+.no-wrap { white-space: nowrap; }
+.is-group { margin-bottom: 20px; }
 
-body {
-	font-family: 'Aleo', serif;
-	margin: 0px;
-	box-sizing: border-box;
-	font-size: 1rem;
-}
-
-.container {
-	max-width: 768px;
-	margin: 0 auto;
-	padding: 50px 20px;
+//OVERRIDES
+.select.is-expanded {
+	width: 100%;
+	select { width: 100%; }
 }
 
 
 
-
-
-
-
+/////////////////////////
+//SECTION: HEADER
+////////////////////////
 #header {
 	// background-color: lighten($gold, 20%);
 	min-height: 500px;
@@ -218,6 +252,31 @@ body {
 	}
 }
 
+/////////////////////////
+//SECTION: WEDDING INFO
+////////////////////////
+#wedding {
+	h4 { margin-bottom: 5px; }
+	#countdown-clock { opacity: 0.6; }
+}
+
+/////////////////////////
+//SECTION: FAQ
+////////////////////////
+#faq {
+	h4 {
+		&::before {
+			counter-increment: faq;
+			content: counter(faq) ". ";
+		}
+	}
+	p, h4, h5 {text-align: left; margin-bottom: 5px;}
+	counter-reset: faq;
+}
+
+/////////////////////////
+//SECTION: ABOUT US
+////////////////////////
 #about-us {
 	h3 {
 		margin-bottom: 30px;
@@ -247,6 +306,10 @@ body {
 		}
 	}
 }
+
+/////////////////////////
+//SECTION: RSVP & GUESTBOOK
+////////////////////////
 #rsvp, #guestbook {
 	outline: none;
 	.form {
@@ -256,15 +319,13 @@ body {
 		border-radius: 1px;
 	}
 }
-
 #rsvp-guestbook {
 	outline: none;
 }
 
-#countdown-clock {
-	// font-size: 3rem;
-}
-
+/////////////////////////
+//SECTION: GALLERY
+////////////////////////
 #gallery {
 	img {
 		margin: 0 auto;
@@ -275,17 +336,38 @@ body {
 	}
 }
 
-#reception-activity {
+/////////////////////////
+//SECTION: RSVP & GUESTBOOK
+////////////////////////
+#upload {
 	outline: none;
-	.button {
-		margin-bottom: 10px;
-	}
-	.decorative-title:after {
-		margin-top: -17px;
-		font-size: 7rem;
-	}
+	.button { margin-bottom: 10px;}
 }
 
-#cta-before, #cta-after, #rsvp, #reception-activity, #guestbook {
+
+
+
+
+//SLICK
+/* the slides */
+.slick-slide {
+	margin: 0 15px;
+}
+/* the parent */
+.slick-list {
+	margin: 0 -15px;
+}
+.slick-track {
+	display: flex;
+}
+.slick-track .slick-slide {
+	display: flex;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+//Hide Show Before/After
+#cta-before, #cta-after, #rsvp, #reception-activity, #guestbook, .postwedding, .prewedding {
 	display: none;
 }
