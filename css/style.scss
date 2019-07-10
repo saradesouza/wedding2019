@@ -249,6 +249,11 @@ body {
 		display: flex;
 	    align-items: center;
 	    justify-content: space-around;
+	    & > div {
+	    	width: 20%;
+	    	& > a { padding: 10px; }
+	    }
+	    .coat-of-arms { background-position: 50%; }
 	}
 }
 

@@ -213,6 +213,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+    #header .navigation-bar > div {
+      width: 20%; }
+      #header .navigation-bar > div > a {
+        padding: 10px; }
+    #header .navigation-bar .coat-of-arms {
+      background-position: 50%; }
 
 #wedding h4 {
   margin-bottom: 5px; }
