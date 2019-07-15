@@ -379,6 +379,7 @@ body {
 		max-width: 425px;
     	margin: 30px auto;
 	}
+	#rsvp-yes { display: none; }
 	input[name="rsvp-attendance"] { display: none; }
 	.hidden-validation {
 		font-style: italic;

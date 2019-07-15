@@ -1,6 +1,7 @@
 $(document).ready(() => {
-  console.log('hello');
-  // SMOOTH SCROLL===
+  ///////////
+  //SMOOTH SCROLL
+  ///////////
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -38,7 +39,7 @@ $(document).ready(() => {
 });
 
 ///////////
-//SLICK
+//SLICK.JS
 ///////////
 $(document).ready(function(){
   console.log('slick init');
@@ -85,7 +86,9 @@ $(document).ready(function(){
 //DATE CALCULATION
 /////////////////////////////
 
-var today = new Date().getTime();
+// var today = new Date().getTime();
+var today = new Date("November 23, 2019 00:00:00").getTime();
+var rsvpDeadline = new Date("November 1, 2019 00:00:00").getTime();
 var weddingDay = new Date("December 1, 2019 9:30:00").getTime();
 
 //COUNTDOWN
@@ -108,41 +111,48 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-//HIDE/SHOW CONTENT BASED ON TIME
+//HIDE/SHOW DIVS BASED ON TIME
 window.setInterval(function(){
   if(today>weddingDay){ //after wedding
     $('#rsvp, #cta-before, .prewedding').hide();
     $('#upload, #guestbook, #cta-after, .postwedding').show();
   }
   else { //prewedding
-      $('#rsvp, #cta-before, .prewedding').show();
+    $('#rsvp, #cta-before, .prewedding').show();
     $('#upload, #guestbook, #cta-after, .postwedding').hide();
-   }
+  }
+  clearInterval();
 });
 
-/////////////////////////////
+///////////////////////////////////////////////////////////
 //RSVP FORM
-/////////////////////////////
-$('#rsvp-yes').hide();
+///////////////////////////////////////////////////////////
+
+window.setInterval(function(){
+  if(today>rsvpDeadline){ //after deadline
+    $('#form-rsvp, #pre-rsvp').hide();
+    $('#post-rsvp').show();
+  }
+  clearInterval();
+});
 
 $('[name*=rsvp-attendance]').change(function() {
   //Hidden input
   $('#input-rsvp-attendance').val($(this).val());
-
+  //Show/hide second step based on if they are coming or not
   if ($(this).val() == 'Yes') {
     $('#rsvp-yes').slideDown();
   } else {
     $('#rsvp-yes').slideUp();
   }
-
+  //Hidden value's validation hack
   if ($('#input-rsvp-attendance').val()!="") {
     $('.hidden-validation').hide();
   } else {
     $('.hidden-validation').show();
   }
 });
-
-
+//Check if they have indicated their attendance when trying to submit form
 $('.btn-submit').click(function(e){
   if ($('#input-rsvp-attendance').val()!="") {
     $('.hidden-validation').hide();

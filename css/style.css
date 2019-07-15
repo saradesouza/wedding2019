@@ -7281,6 +7281,9 @@ body {
     max-width: 425px;
     margin: 30px auto; } }
 
+#form-rsvp #rsvp-yes {
+  display: none; }
+
 #form-rsvp input[name="rsvp-attendance"] {
   display: none; }
 
