@@ -8,28 +8,36 @@
   <meta name="author" content="Farhan Sara">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo|Alice" rel="stylesheet">
 </head>
 
 <body>
 	<section id="header">
-		<div class="navigation-bar prewedding">
-			<div><a href="#wedding" class="white">Reception</a></div>
-			<div><a href="#about-us" class="white">About Us</a></div>
-			<div class="sprite coat-of-arms"></div>
-			<div><a href="#rsvp" class="white prewedding">RSVP Now</a></div>
-			<div><a href="#faq" class="white prewedding">FAQ</a></div>
+		<div class="navigation-bar--desktop is-hidden-mobile">
+			<div class="navigation-bar prewedding">
+				<div><a href="#wedding" class="white">Reception</a></div>
+				<div><a href="#about-us" class="white">About Us</a></div>
+				<div class="sprite coat-of-arms"></div>
+				<div><a href="#rsvp" class="white prewedding">RSVP Now</a></div>
+				<div><a href="#faq" class="white prewedding">FAQ</a></div>
+			</div>
+			<div class="navigation-bar postwedding">
+				<div><a href="#wedding" class="white">Reception Info</a></div>
+				<div><a href="#about-us" class="white">About Us</a></div>
+				<div class="sprite coat-of-arms"></div>
+				<div><a href="#guestbook" class="white postwedding">e-Guestbook</a></div>
+				<div><a href="#upload" class="white postwedding">Upload Photos</a></div>
+			</div>
 		</div>
-		<div class="navigation-bar postwedding">
-			<div><a href="#wedding" class="white">Reception Info</a></div>
-			<div><a href="#about-us" class="white">About Us</a></div>
-			<div class="sprite coat-of-arms"></div>
-			<div><a href="#guestbook" class="white postwedding">e-Guestbook</a></div>
-			<div><a href="#photos" class="white postwedding">Upload Photos</a></div>
+		
+		<div class="navigation-bar--mobile is-hidden-tablet">
+			<div class="navigation-bar--mobile__coat-of-arms">
+				<div class="sprite coat-of-arms"></div>
+			</div>
 		</div>
 		<div class="container">		
 			<h2>
@@ -45,15 +53,15 @@
 			</h2>
 			<div id="cta-before">
 				<a href="#rsvp-guestbook">
-					<div class="button is-medium gold">RSVP Now</div>
+					<div class="button is-medium gold">RSVP Now <i class="sprite angle blue is-sprite-right"></i></div>
 				</a>
 			</div>
 			<div id="cta-after">
 				<a href="#guestbook">
-					<div class="button is-medium gold">Sign Guestbook</div>
+					<div class="button is-medium gold">Sign Guestbook <i class="sprite angle blue is-sprite-right"></i></div>
 				</a>
-				<a href="#reception-activity">
-					<div class="button is-medium gold">Upload Photos</div>
+				<a href="#upload">
+					<div class="button is-medium gold">Upload Photos <i class="sprite angle blue is-sprite-right"></i></div>
 				</a>
 			</div>
 		</div>
@@ -71,9 +79,9 @@
 						<div id="countdown-clock" class="prewedding has-text-center"></div>
 					</div>
 					<div class="wedding--cta prewedding">
-						<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now</div></a>
+						<a href="#rsvp-guestbook"><div class="button is-medium gold">RSVP Now <i class="sprite angle blue is-sprite-right"></i></div></a>
 						<br>
-						<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar</div></a>
+						<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3Nka3UzbzJyaWF0NGVtazRmZm11NzU5ZG8gc2FyYWRlc291emE4N0Bt&tmsrc=saradesouza87%40gmail.com"><div class="button is-normal">Add to Google Calendar <i class="sprite angle is-sprite-right"></i></div></a>
 					</div>
 				</div>
 			</div>
@@ -86,7 +94,7 @@
 						<p><strong>Dewan Merak Kayangan</strong><br>Bangunan Balai Felda, Kampung Datuk Keramat, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
 					</div>
 					<iframe class="is-hidden-tablet is-group" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8"><div class="button is-normal">Open in Google Maps</div></a>
+					<a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8"><div class="button is-normal">Open in Google Maps <i class="sprite angle is-sprite-right"></i></div></a>
 				</div>
 				<div class="column is-6 is-hidden-mobile">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.720750436799!2d101.71504921474235!3d3.1680701539195506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37dcdb955555%3A0xada4caf98653b9ec!2sDewan+Merak+Kayangan!5e0!3m2!1sen!2smy!4v1556731680805!5m2!1sen!2smy" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -115,115 +123,143 @@
 	</section>
 
 	<section id="rsvp-guestbook" class="bg-arch dark">
+
+		<!-- FORM: RSVP -->
 		<div id="rsvp" class="container">
-			<h3 class="has-text-centered decorative-title">RSVP Form</h3>
+			<h3 class="has-text-centered decorative-title">RSVP Your Attendance</h3>
 			<p class="is-size-6 has-text-centered">
-				Please fill out the online form below to RSVP to our joyous event.<br>
+				Please fill out the online form below to RSVP to our reception on the 1st December, 12pm.<br>
 				RSVP deadline is on the 31st of October.
 			</p>
 
-			<div class="form">
+			<form id="form-rsvp" class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSfhXczjMXMO-l3MNgKaipQo_9XF98ESibk_ik9q7bpmh55ylQ/formResponse">
 
 				<div class="columns is-multiline">
+
 					<div class="column is-6 field">
-					  <label class="label">Name</label>
+					  <label class="label has-text-centered-mobile">Your Name *</label>
 					  <div class="control">
-					    <input class="input" type="text" placeholder="David Tennant">
+					    <input class="input is-medium"
+					    	name="entry.1420864763"
+					    	type="text"
+					    	placeholder="Your Name" required>
 					  </div>
 					</div>
 
 					<div class="column is-6 field">
-					  <label class="label">Bringing a +1? Who?</label>
-					  <div class="control">
-					    <input class="input" type="text" placeholder="Yes, my spouse">
-					  </div>
+					  <label class="label has-text-centered-mobile">Are you able to attend? *</label>
+					  <div class="form-radio-container control is-flex">
+
+							<input type="radio" id="rsvp-option-yes" value="Yes" name="rsvp-attendance"> 
+							<label for="rsvp-option-yes" class="form-radio column">Yes, I can.</label>
+
+							<input type="radio" id="rsvp-option-no" value="No" name="rsvp-attendance"> 
+							<label for="rsvp-option-no" class="form-radio column">No, sorry!</label>
+
+							<input id="input-rsvp-attendance" type="hidden" name="entry.276121768" value="">
+						</div>
+						<div class="hidden-validation has-text-centered-mobile">Please indicate if you can attend.</div>
 					</div>
 
-					<div class="column is-6 field">
-					  <label class="label">Your Email or Phone Number (Optional)</label>
-					  <div class="control">
-					    <input class="input" type="text" placeholder="Phone number or E-mail address">
-					  </div>
-					</div>
+					<div id="rsvp-yes" class="column is-12">
+						<div class="columns is-multiline">
+							<h4 class="column is-12 has-text-centered">- Your Information -</h4>
 
-					<div class="column is-6 field">
-						<label class="label">Which group are you from?</label>
-						<div class="control">
-							<div class="select is-expanded">
-								<select>
-									<option value="">Choose one</option>
-									<option value="Farhan's friend">Farhan's friends/colleague</option>
-									<option value="Farhan's family">Farhan's family</option>
-									<option value="Farhan's family">iMoney Colleagues</option>
-									<option value="Sara's friend/colleague">Sara's friends/colleague</option>
-									<option value="Sara's family">Sara's family</option>
-									<option value="Sara's family">Others</option>
-								</select>
+							<div class="column is-4 field">
+							  <label class="label has-text-centered-mobile">Email/Phone Number *</label>
+							  <div class="control">
+							    <input class="input"
+							    name="entry.876603204"
+							    type="text"
+							    placeholder="Email/Phone Number">
+							  </div>
+							</div>
+
+							<div class="column is-4 field">
+								<label class="label has-text-centered-mobile">Which group are you from? *</label>
+								<div class="control">
+									<div class="select is-expanded">
+										<select name="entry.952696788">
+											<option value="Not chosen">Choose one</option>
+											<option value="Farhan's friend">Farhan's friends/colleague</option>
+											<option value="Farhan's family">Farhan's family</option>
+											<option value="Farhan's family">iMoney Colleagues</option>
+											<option value="Sara's friend/colleague">Sara's friends/colleague</option>
+											<option value="Sara's family">Sara's family</option>
+											<option value="Sara's family">Others</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="column is-4 field">
+							  <label class="label has-text-centered-mobile">Bringing a +1? Who?</label>
+							  <div class="control">
+							    <input class="input"
+							    name="entry.1965894769"
+							    type="text"
+							    placeholder="Yes, my spouse">
+							  </div>
+							</div>
+
+							<div class="field column is-12">
+							  <label class="label has-text-centered-mobile">Any requests? (We'll try to meet them, but we apologize if we can't!)</label>
+							  <div class="control">
+							    <textarea name="entry.1186783873" class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
+							  </div>
 							</div>
 						</div>
 					</div>
-
-					<div class="field column is-12">
-					  <label class="label">Any requests? (We'll try to meet them, but we apologize if we can't!)</label>
-					  <div class="control">
-					    <textarea class="textarea" placeholder="Type your requests here. e.g I can't eat beef, I can't eat spicy, I can't take the stairs etc."></textarea>
-					  </div>
-					</div>
-
 				</div>
 
 				<div class="field is-grouped">
 				  <div class="control margin-auto">
-				    <button class="button is-medium gold is-link">Submit</button>
+				    <button class="btn-submit button is-medium gold is-link">Confirm my RSVP <i class="sprite angle blue is-sprite-right"></i></button>
 				  </div>
 				</div>
-			</div>
+			</form>
 		</div>
 
+		<!-- FORM: GUESTBOOK -->
 		<div id="guestbook" class="container">
-			<h3 class="has-text-centered decorative-title">Write in our e-Guestbook</h3>
+			<h3 class="has-text-centered decorative-title">Sign our e-Guestbook</h3>
 			<p class="is-size-5 has-text-centered">
 				Technology is so fancy. Write to us your well-wishes here instead of making us lug another item to carry home.
 			</p>
 			<div class="form">
 
-				<div class="columns">
-					<div class="column is-6 field">
-					  <label class="label">Tell us your name</label>
+				<div class="columns is-multiline">
+					<div class="column is-12 field">
+					  <label class="label">Your Name</label>
 					  <div class="control">
 					    <input class="input" type="text" placeholder="David Tennant">
 					  </div>
 					</div>
-
-					<div class="column is-6 field">
-					  <label class="label">Contact Detail</label>
+					<div class="column is-12 field">
+					  <label class="label">Your Message</label>
 					  <div class="control">
-					    <input class="input" type="text" placeholder="Phone number or E-mail">
+					    <textarea class="textarea" placeholder="Write your well-wishes here!"></textarea>
 					  </div>
 					</div>
 				</div>
 
-				<div class="field">
-				  <label class="label">Message</label>
-				  <div class="control">
-				    <textarea class="textarea" placeholder="Write your well-wishes here!"></textarea>
-				  </div>
-				</div>
+				
 
 				<div class="field is-grouped">
 				  <div class="control margin-auto">
-				    <button class="button is-medium gold is-link">Submit</button>
+				    <button class="btn-submit button is-medium gold is-link">Sign Guestbook <i class="sprite angle blue is-sprite-right"></i></button>
 				  </div>
 				</div>
 			</div>
 		</div>
+
 	</section>
 
 	<section id="faq" class="bordered prewedding">
-		<div class="container has-text-centered">
-			<h3 class="decorative-title">FAQs</h3>
+		<div class="container">
+			<h3 class="decorative-title has-text-centered">Frequently Asked Questions</h3>
 			<div class="columns">
-				<div class="column is-8 is-offset-2">
+				<div class="column is-10 is-offset-1">
 
 					<div class="is-group">
 						<h4>What kind of wedding is it?</h4>
@@ -237,44 +273,52 @@
 
 					<div class="is-group">
 						<h4>What if I have a dietry restriction? Do you serve vegetarian/vegan options?</h4>
-						<p>Please let us know and we'll do our best to accomodate. However we apologize if we're unable to meet your requirements!</p>
-						<p>We currently have a limited amount of non-beef tables, please let us know if you'd like to be placed on them.</p>
-						<p>We have a vegan/vegetarian dish (dahl) but we cannot guarantee if it's pure vegan/vegetarian.</p>
+						<p>All the food served is Halal. We will be serving these dishes during the wedding reception, buffet-style:</p>
+						<ul class="list-bullet">
+							<li>Vegetarian Dahl</li>
+							<li>Fish</li>
+							<li>Beef Rendang</li>
+							<li>Ayam Masak Merah (Chicken in red sauce)</li>
+							<li>White Rice</li>
+						</ul>
+						<p>Because the wedding party will be busy with the event itself, we cannot guarantee that there will not be any cross-contamination during the preparation of the dishes.</p>
+						<p><strong>Non-beef eaters:</strong> We have special tables that serves Lamb Kuzi instead of Beef Rendang. If you would like to be placed on one of these tables,  <a href="#rsvp">please let us know in advance.</a> However, please note that you might be separated from people you are familiar with!</p>
 					</div>
 
 					<div class="is-group">
 						<h4>What is my table number?</h4>
-						<p>We will let you know one week before the event what is your table number. Alternatively, you can find out from our usherers on the day of the event and they'll help you out.</p>
+						<p>We will inform you of your table number <strong>one week before the event</strong>. We will also post the link here when it is ready. Alternatively, you can find out your table number on the day itself.</p>
 					</div>
 
 					<div class="is-group">
-						<h4>Can I bring a +1? How about kids?</h4>
-						<p>Yes, you absolutely can bring a +1! We can also allow you to bring your kids if it means we can have you attend our special day, <a href="#rsvp">just let us know in advance</a> so we can allocate the seats accordingly.</p>
+						<h4>Can I bring a +1 that you didn't specifically invite?</h4>
+						<p>We can allow for +1s if there are extra seats, <a href="#rsvp">just let us know</a> and we'll see what we can do.</p>
 					</div>
 
 					<div class="is-group">
 						<h4>Is there any dress code? Colour theme?</h4>
-						<p>The bride's family will be wearing blue and the groom's family colours is gold. If you're neither, you're welcomed to wear anything as long as it's smart casual :)</p>
+						<p>The bride's family will be wearing blue and the groom's family colours is gold. If you're neither, you're welcomed to wear anything smart casual :)</p>
 					</div>
 
 					<div class="is-group">
-						<h4>When is the nikah? (ROM)</h4>
-						<p>9.30am on the same day (1 December), same hall and venue. Only family and some close friends will be attending.</p>
+						<h4>When is the Nikah? (Registration Of Marriage)</h4>
+						<p>9.30am on the same day (1 December), same hall and venue. Only family and a few close friends will be attending.</p>
 					</div>
 
 					<div class="is-group">
-						<h4>When is the tea ceremony?</h4>
-						<p>10.30am on the same day (1 December), same hall and venue. Family members who want to be a part of this special occasion should be present by 10.15am.</p>
+						<h4>When is the Tea Ceremony?</h4>
+						<p>10.30am on the same day (1 December), same hall and venue. Family members who want to be a part of this special occasion <strong>should be present by 10.15am.</strong></p>
 					</div>
 
 					<div class="is-group">
 						<h4>About the Venue</h4>
 						<h5>a. How do we get to Dewan Merak Kayangan?</h5>
-						<p>You need to drive, unfortunately. There is no public transport that I know of.</p>
+						<p><strong>Drive:</strong> Use <a href="https://goo.gl/maps/UcqwUj4Bfx4KLPPh8">this link</a> to navigate using Google Maps or Waze.</p>
+						<p><strong>Public Transport:</strong> Take the Kelana Jaya LRT line to Damai LRT station and take a Grab/taxi to the location, or walk 15 minutes to the venue.</p>
 						<h5>b. Are there parking spaces?</h5>
 						<p>Yes, there is free parking available on site.</p>
 						<h5>c. Is Dewan Merak Kayangan wheelchair accessible? What if I have mobility issues?</h5>
-						<p>Please let us know if you are wheelchair bound or have mobility issues so we can allocate you to seating that is on ground level. The surrounding areas is wheelchair accessible, but the hall itself is split-level. </p>
+						<p><a href="#rsvp">Please let us know</a> if you are wheelchair bound or have mobility issues so we can allocate you to seating that is on ground level. The surrounding areas is wheelchair accessible, but the hall itself is split-level. </p>
 					</div>
 
 					<div class="is-group">
@@ -313,21 +357,14 @@
 					<div class="columns is-1 is-variable is-mobile">
 						<div class="column is-6">
 							<i class="icon upload-cloud"></i>
-							<a target="_blank" href="https://photos.google.com/u/0/share/AF1QipPfiobLUc3AZSWXDdUnOvDP6Id2B2Bk-1Mu7MvTvmB2G9NH0k7YLKfbYeq0I0nT8A?key=UUhGekJKWDdJanBRVldpZktKLXhTWHJrdzBHM1ZB"><div class="button">Upload to Google Photos</div></a>
+							<a target="_blank" href="https://photos.google.com/u/0/share/AF1QipPfiobLUc3AZSWXDdUnOvDP6Id2B2Bk-1Mu7MvTvmB2G9NH0k7YLKfbYeq0I0nT8A?key=UUhGekJKWDdJanBRVldpZktKLXhTWHJrdzBHM1ZB"><div class="button">Upload to Google Photos <i class="sprite angle blue is-sprite-right"></i></div></a>
 						</div>
 						<div class="column is-6">
 							<i class="icon upload-whatsapp"></i>
-							<a href="https://wa.me/60172951670"><div class="button">Send via WhatsApp</div></a>
+							<a href="https://wa.me/60172951670"><div class="button">Send via WhatsApp <i class="sprite angle blue is-sprite-right"></i></div></a>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="column is-6">
-					<div class="is-group">
-						<h4>Write in our eGuestbook</h4>
-						<p>Save the earth and our cupboard space! Write your well-wishes to us digitally instead.</p>
-					</div>
-					<a href="#guestbook"><div class="button">Write in<br>eGuestbook</div></a>
-				</div> -->
 			</div>
 		</div>
 	</section>

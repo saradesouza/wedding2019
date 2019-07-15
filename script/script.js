@@ -37,6 +37,9 @@ $(document).ready(() => {
     });
 });
 
+///////////
+//SLICK
+///////////
 $(document).ready(function(){
   console.log('slick init');
   $('.img-slick').slick({
@@ -78,42 +81,36 @@ $(document).ready(function(){
 });
 
 
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 1, 2019 10:00:00").getTime();
+/////////////////////////////
+//DATE CALCULATION
+/////////////////////////////
 
+var today = new Date().getTime();
+var weddingDay = new Date("December 1, 2019 9:30:00").getTime();
+
+//COUNTDOWN
 // Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
+  // Find the distance between today and the wedding date
+  var distance = weddingDay - today;
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
+  // Display the result
   document.getElementById("countdown-clock").innerHTML = "(" + days + " days, " + hours + " hours and "
   + minutes + " minutes to go!)";
-
-  // If the count down is finished, write some text 
+  // If the count down is finished, leave blank
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown-clock").innerHTML = "EXPIRED";
+    document.getElementById("countdown-clock").innerHTML = " ";
   }
 }, 1000);
 
-//Hide Show based on time
+//HIDE/SHOW CONTENT BASED ON TIME
 window.setInterval(function(){
-
-  var current = new Date();
-  var wedding = new Date("December 1, 2019 12:00:00")
-
-  if(current.getTime()>wedding.getTime()){ //after wedding
+  if(today>weddingDay){ //after wedding
     $('#rsvp, #cta-before, .prewedding').hide();
     $('#upload, #guestbook, #cta-after, .postwedding').show();
   }
@@ -122,3 +119,36 @@ window.setInterval(function(){
     $('#upload, #guestbook, #cta-after, .postwedding').hide();
    }
 });
+
+/////////////////////////////
+//RSVP FORM
+/////////////////////////////
+$('#rsvp-yes').hide();
+
+$('[name*=rsvp-attendance]').change(function() {
+  //Hidden input
+  $('#input-rsvp-attendance').val($(this).val());
+
+  if ($(this).val() == 'Yes') {
+    $('#rsvp-yes').slideDown();
+  } else {
+    $('#rsvp-yes').slideUp();
+  }
+
+  if ($('#input-rsvp-attendance').val()!="") {
+    $('.hidden-validation').hide();
+  } else {
+    $('.hidden-validation').show();
+  }
+});
+
+
+$('.btn-submit').click(function(e){
+  if ($('#input-rsvp-attendance').val()!="") {
+    $('.hidden-validation').hide();
+  } else {
+    $('.hidden-validation').show();
+    e.preventDefault();
+  }
+});
+
