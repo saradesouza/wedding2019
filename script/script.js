@@ -86,8 +86,8 @@ $(document).ready(function(){
 //DATE CALCULATION
 /////////////////////////////
 
-// var today = new Date().getTime();
-var today = new Date("November 23, 2019 00:00:00").getTime();
+var today = new Date().getTime();
+// var today = new Date("November 23, 2019 00:00:00").getTime();
 var rsvpDeadline = new Date("November 1, 2019 00:00:00").getTime();
 var weddingDay = new Date("December 1, 2019 9:30:00").getTime();
 
