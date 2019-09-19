@@ -6984,6 +6984,10 @@ h3 {
   line-height: 2.1rem;
   z-index: 5;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.8rem;
+      line-height: 2rem; } }
 
 h4 {
   font-size: 1.6rem;
@@ -6991,12 +6995,15 @@ h4 {
   margin-bottom: 0px;
   line-height: 1.6rem;
   margin-bottom: 5px; }
+  @media screen and (max-width: 768px) {
+    h4 {
+      font-size: 1.5rem; } }
 
 h5 {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: #1a334d;
-  font-family: 'Aleo', serif;
+  font-family: 'Alice', serif;
   margin: 15px 0 0; }
 
 a.white {
@@ -7006,6 +7013,9 @@ a.white {
 
 p {
   line-height: 1.6rem; }
+  @media screen and (max-width: 768px) {
+    p {
+      line-height: 1.4rem; } }
 
 strong {
   color: #585858; }
@@ -7025,12 +7035,22 @@ ul {
     ul.list-bullet li {
       margin-inline-start: 30px; }
 
+label {
+  font-size: 1.2rem; }
+  @media screen and (max-width: 768px) {
+    label {
+      font-size: 1rem; } }
+
 body {
-  font-family: 'Aleo', serif;
+  font-family: 'Crimson Text', serif;
   margin: 0px;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #727272; }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 1.1rem;
+      line-height: 1.3rem; } }
 
 .container {
   max-width: 768px;
@@ -7057,7 +7077,7 @@ body {
   white-space: unset;
   line-height: 1.3rem;
   margin-bottom: 15px;
-  font-family: 'Aleo', serif;
+  font-family: 'Alice', serif;
   padding: 0 1.5em;
   transition: background-color 0.15s; }
   .button.blue {
@@ -7074,6 +7094,8 @@ body {
     .button.gold:hover {
       background-color: #f5c856;
       border-color: transparent; }
+  .button.is-normal {
+    color: #003366; }
 
 .dark {
   background-color: #003366;
@@ -7118,6 +7140,10 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .sprite.farhan-sara {
+        width: 270px;
+        height: 215px; } }
   .sprite.coat-of-arms {
     background-image: url("../img/coat-of-arms.svg");
     background-size: contain;
@@ -7204,6 +7230,10 @@ body {
   #header h2 {
     margin-top: -10px;
     color: white; }
+    @media screen and (max-width: 768px) {
+      #header h2 {
+        font-size: 1rem;
+        line-height: 1.4rem; } }
   #header .navigation-bar--desktop {
     width: 100%; }
     #header .navigation-bar--desktop .navigation-bar {
