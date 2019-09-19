@@ -39,6 +39,23 @@ $(document).ready(() => {
     });
 });
 
+///////////
+//SLICK.JS
+///////////
+// $(document).ready(function(){
+//   console.log('slick init');
+//   $('.img-slick').slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     adaptiveHeight: true,
+//     arrows: false,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//   });
+// });
+
 /////////////////////////////
 //DATE CALCULATION
 /////////////////////////////
@@ -60,7 +77,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Display the result
   document.getElementById("countdown-clock").innerHTML = "(" + days + " days, " + hours + " hours and "
-  + minutes + " minutes to go!)";
+  + minutes + " minutes left!)";
   // If the count down is finished, leave blank
   if (distance < 0) {
     clearInterval(x);
