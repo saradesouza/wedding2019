@@ -309,6 +309,9 @@ body {
     	margin-top: 5px;
 	}
 	.googlemaps { height: 300px; }
+	.icon.location {
+		@include mobile { margin: 0 auto; }
+	}
 }
 
 /////////////////////////

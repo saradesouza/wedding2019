@@ -7234,6 +7234,10 @@ body {
 #wedding .googlemaps {
   height: 300px; }
 
+@media screen and (max-width: 768px) {
+  #wedding .icon.location {
+    margin: 0 auto; } }
+
 #faq {
   counter-reset: faq; }
   #faq h3 {
