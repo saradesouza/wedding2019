@@ -23,6 +23,10 @@ h3 {
 	line-height: 2.1rem;
 	z-index: 5;
 	position: relative;
+	@include mobile {
+		font-size: 1.8rem;
+    	line-height: 2rem;
+	}
 }
 h4 {
 	font-size: 1.6rem;
@@ -30,12 +34,13 @@ h4 {
 	margin-bottom: 0px;
 	line-height: 1.6rem;
 	margin-bottom: 5px;
+	@include mobile { font-size: 1.5rem; }
 }
 h5 {
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 	color: desaturate($navy-blue, 50%);
-	font-family: 'Aleo', serif;
+	font-family: 'Alice', serif;
 	margin: 15px 0 0;
 }
 
@@ -45,7 +50,10 @@ a {
 		&:hover { text-decoration: underline; }
 	}
 }
-p { line-height: 1.6rem; }
+p {
+	line-height: 1.6rem;
+	@include mobile { line-height: 1.4rem; }
+}
 
 strong { color: #585858; }
 
@@ -69,14 +77,23 @@ ul  {
 	}
 }
 
+label {
+	font-size: 1.2rem;
+	@include mobile { font-size: 1rem; }
+}
+
 
 //BODY & CONTAINER
 body {
-	font-family: 'Aleo', serif;
+	font-family: 'Crimson Text', serif;
 	margin: 0px;
 	box-sizing: border-box;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: $grey;
+	@include mobile {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
 }
 .container {
 	max-width: 768px;
@@ -110,7 +127,7 @@ body {
 	white-space: unset;
 	line-height: 1.3rem;
 	margin-bottom: 15px;
-	font-family: 'Aleo', serif;
+	font-family: 'Alice', serif;
 	padding: 0 1.5em;
 	transition: background-color 0.15s;
 	&.blue {
@@ -131,6 +148,7 @@ body {
 			border-color: transparent;
 		}
 	}
+	&.is-normal { color: $navy-blue; }
 }
 
 //BG PANELS
@@ -173,6 +191,10 @@ body {
 	    background-repeat: no-repeat;
 	    margin: 0 auto;
 	    margin-bottom: 20px;
+	    @include mobile {
+	    	width: 270px;
+    		height: 215px;
+	    }
 	}
 	&.coat-of-arms {
 		background-image: url('../img/coat-of-arms.svg');
@@ -276,6 +298,10 @@ body {
 	h2 {
 		margin-top: -10px;
 		color: white;
+		@include mobile {
+			font-size: 1rem;
+    		line-height: 1.4rem;
+		}
 	}
 	.navigation-bar--desktop {
 		width: 100%;
