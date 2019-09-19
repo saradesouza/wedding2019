@@ -7012,10 +7012,12 @@ a.white {
     text-decoration: underline; }
 
 p {
+  font-size: 1.2rem;
   line-height: 1.6rem; }
   @media screen and (max-width: 768px) {
     p {
-      line-height: 1.4rem; } }
+      font-size: 1rem;
+      line-height: 1.2rem; } }
 
 strong {
   color: #585858; }
@@ -7049,8 +7051,8 @@ body {
   color: #727272; }
   @media screen and (max-width: 768px) {
     body {
-      font-size: 1.1rem;
-      line-height: 1.3rem; } }
+      font-size: 1rem;
+      line-height: 1.2rem; } }
 
 .container {
   max-width: 768px;
@@ -7228,11 +7230,12 @@ body {
     color: white;
     line-height: 3.2rem; }
   #header h2 {
+    font-size: 1rem;
     margin-top: -10px;
     color: white; }
     @media screen and (max-width: 768px) {
       #header h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.4rem; } }
   #header .navigation-bar--desktop {
     width: 100%; }
