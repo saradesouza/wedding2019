@@ -51,8 +51,12 @@ a {
 	}
 }
 p {
+	font-size: 1.2rem;
 	line-height: 1.6rem;
-	@include mobile { line-height: 1.4rem; }
+	@include mobile {
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
 }
 
 strong { color: #585858; }
@@ -91,8 +95,8 @@ body {
 	font-size: 1.2rem;
 	color: $grey;
 	@include mobile {
-		font-size: 1.1rem;
-		line-height: 1.3rem;
+		font-size: 1rem;
+		line-height: 1.2rem;
 	}
 }
 .container {
