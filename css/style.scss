@@ -357,10 +357,10 @@ body {
 		margin: 0 auto;
 		margin-bottom: 20px;
 		&--farhan {
-			background-image: url('https://lh3.googleusercontent.com/JnA6SeetkBF0mO8f269JLpZPM5-tnjveUhwNK1tZPGpZ4hfdimK88Q97LxZOqxZUN8M0K_rBiF-611Sxp-CcGHatF2zhV_XEcHl1y1kZxhALI7c7iaAqzlJ70M0el32MDdfAMhffxn92g3m5Loy_5qFChtlTpX2U2_6RKIWR0iB2yasF2WTM92QZDpVmTyOp90dmyvJE80L7p1viHyAKsKVCr-cgTWUMeXxRMaHMz-L9ZX4ZMW4n32yxrXPpfhS_GP9mWw1XKnNgz6Sagc3sMIXGm0rDd4t16wuEXW31tWolgle-9NoWPL-d7JDO4S7_hSBchVpDjZGm5cph9mEjUFBubDk_dqM_ncBuTa-rUUO0E-jd0LVn6ja1WnbgXZdD6tFZSdrGR9RhgHtMkGsu3gjOgNv_hIZABUlUSsaRWQsbevyAc5j0vLgT0VPyHUq2RgGrvvyqv0UxmDt6feRfBMtfm1mV0tgjcUKbX0lCHIU3wT4DFdIToHIDxAoeXpc_kF9YxwttlBNlLyF1R0s9FVIdfbbaeBLooAd2Q7RaT6_-LVObI4AZP-6HuQSKS6l6f8QYuKTBE2G9CZKcQc7nAgVGjoTmWwj7jnZz1mzZg5ECT9_IQ8BYdY4QSuL-I5Em0oktbsQnBeHVpFuQITjrdgO3G_tvWFEPKYZ_LdjOLBk5OSRz8OLZJdtEQW2tem91c-j_Nuz-O5Wh8kpj21V1sblK6g=w810-h1080-no');
+			background-image: url('../img/farhan.jpg');
 		}
 		&--sara {
-			background-image: url('https://lh3.googleusercontent.com/xkTyrcSK_DUkjbH3pl-YPLVgMu0zaOU-NnHZ2BRjykM_WcW1KgCcvvtZItSVFGyIrPE3L9UVyegOybtA20V8l71puFKElIBcF6AuOyrUBrK-TT0RzrUcnpgE1KSscYqFs5pxwmykzGe4FBrA7Mh_XJXLJN2Jtf4ut5PYBknuLlRHIPyV8_9ufEeJflZboekbDbYifFAZ_gi0NpGk4tCXPl1Cbgpa9O8kD9f7JoxAU6WqS8KD0rK8fMIdpIFqxmtLy8H_47Rjq6u2Ve2Jauh4vyGuOI6IqofvWe5fS4WmW8NHj25guT33lXE-nZ1P_Ff_Hv-u_oLYRbtgoy2pk9k4Mm0n3PtrtW-b_mvIPXff4RoPPrFyjLRaYSZWS0bGt_EDopYGRmom2IsMxOOfXLli9bN8g65y2oODhD1a4Nbx-TyN2IsiW0VsFvi50-omPrf_34GpTqNzA02_ybOtMhtg1gW5kqA2_08sm3MF_Nm9ODAQLFHS_nNyM_SkwDTG-yGvljjGYI-wC35p9ShHRulfQGRg2QFvcQqAP8QHUjOkd7iFtSqvL6nPh4i_tODQnvr5-j5GzgZQJFNvGr_WDP9JmYeBWNwH1rt8KYpcQTuZ7sX9lkqesQqLD2Qo_AWPq0bsj2rJpUMcT0rWJD_mlwRxVw_xyhoFES6P5bGv6ooT1xcV_SBr8IhjstMcFloUJDpErE2Kpky-Pvw5A07aLgjaEAijFg=w1078-h1436-no');
+			background-image: url('../img/sara.jpg');	
 		}
 	}
 }
@@ -434,10 +434,10 @@ body {
 #gallery {
 	img {
 		margin: 0 auto;
-		@media (max-width: 768px) {
-			max-height: 300px;
-			max-width: 320px;
-		}
+		// @media (max-width: 768px) {
+		// 	max-height: 300px;
+		// 	max-width: 320px;
+		// }
 	}
 }
 

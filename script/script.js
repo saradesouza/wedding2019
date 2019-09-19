@@ -39,24 +39,6 @@ $(document).ready(() => {
     });
 });
 
-///////////
-//SLICK.JS
-///////////
-$(document).ready(function(){
-  console.log('slick init');
-  $('.img-slick').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-});
-
-
 /////////////////////////////
 //DATE CALCULATION
 /////////////////////////////
