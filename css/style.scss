@@ -6,6 +6,162 @@ $navy-blue: #003366;
 $grey: #727272;
 $gold: #f2b826;
 
+
+//Headers & Text
+h1, h2, h3, h4, h5, h6 {
+	color: $navy-blue;
+	font-family: 'Alice', serif;
+	margin-bottom: 30px;
+}
+h1 { letter-spacing: 0.5rem; }
+h2 {
+	letter-spacing: 0.2rem;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 2.2rem;
+	line-height: 2.1rem;
+	z-index: 5;
+	position: relative;
+}
+h4 {
+	font-size: 1.6rem;
+	opacity: 0.7;
+	margin-bottom: 0px;
+	line-height: 1.6rem;
+	margin-bottom: 5px;
+}
+h5 {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: desaturate($navy-blue, 50%);
+	font-family: 'Aleo', serif;
+	margin: 15px 0 0;
+}
+
+a {
+	&.white {
+		color: white;
+		&:hover { text-decoration: underline; }
+	}
+}
+p { line-height: 1.6rem; }
+
+strong { color: #585858; }
+
+hr {
+	background-color: transparent;
+	border-top: 2px solid $gold;
+	opacity: 0.2;
+}
+
+ul  {
+	margin-top: 10px;
+	li {
+		margin-bottom: 10px;
+	}
+	&.list-bullet {
+		list-style: initial;
+		margin: 15px 0;
+		li {
+			margin-inline-start: 30px;
+		}
+	}
+}
+
+
+//BODY & CONTAINER
+body {
+	font-family: 'Aleo', serif;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	color: $grey;
+}
+.container {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 50px 30px;
+}
+
+//ELEMENTS
+.decorative-title {
+	&:after {
+		content: "";
+		background-image: url('../img/ring.svg');
+		width: 70px;
+	    height: 52px;
+	    background-size: contain;
+	    font-size: 5rem;
+	    position: absolute;
+	    opacity: 0.3;
+	    left: 0;
+	    right: 0;
+	    top: -13px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    z-index: -1;
+	}
+}
+
+//BUTTON
+.button {
+	// height: auto;
+	white-space: unset;
+	line-height: 1.3rem;
+	margin-bottom: 15px;
+	font-family: 'Aleo', serif;
+	padding: 0 1.5em;
+	transition: background-color 0.15s;
+	&.blue {
+		background-color: $navy-blue;
+		color: white;
+		border-color: transparent;
+		&:hover {
+			background-color: lighten($navy-blue, 10%);
+			border-color: transparent;
+		}
+	}
+	&.gold {
+		background-color: $gold;
+		color: $navy-blue;
+		border-color: transparent;
+		&:hover {
+			background-color: lighten($gold, 10%);
+			border-color: transparent;
+		}
+	}
+}
+
+//BG PANELS
+.dark {
+	background-color: $navy-blue;
+	color: white;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $gold;
+	}
+	label { color: white; }
+}
+.bordered {
+	margin: 20px;
+    border: 2px solid $gold;
+    border-radius: 1px;
+}
+.bg-arch { background-image: url('../img/blue-arch.png'); }
+
+
+//HELPER CLASSES
+.valign-center { align-items: center; }
+.margin-auto { margin: 0 auto; }
+.no-wrap { white-space: nowrap; }
+.is-group { margin-bottom: 20px; }
+
+//OVERRIDES
+.select.is-expanded {
+	width: 100%;
+	select { width: 100%; }
+}
+
 //Sprites
 .sprite {
 	display: block;
@@ -96,155 +252,6 @@ $gold: #f2b826;
 }
 
 
-//Headers & Text
-h1, h2, h3, h4, h5, h6 {
-	color: $navy-blue;
-	font-family: 'Alice', serif;
-	margin-bottom: 30px;
-}
-h1 { letter-spacing: 0.5rem; }
-h2 {
-	letter-spacing: 0.2rem;
-	margin-bottom: 20px;
-}
-h3 {
-	font-size: 2.2rem;
-	line-height: 2.1rem;
-	z-index: 5;
-	position: relative;
-}
-h4 {
-	font-size: 1.6rem;
-	opacity: 0.7;
-	margin-bottom: 0px;
-	line-height: 1.6rem;
-	margin-bottom: 5px;
-}
-h5 {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-	color: desaturate($navy-blue, 50%);
-	font-family: 'Aleo', serif;
-	margin: 10px 0 0;
-}
-
-a {
-	&.white {
-		color: white;
-		&:hover { text-decoration: underline; }
-	}
-}
-p { line-height: 1.4rem; }
-
-strong { color: #585858; }
-
-hr {
-	background-color: transparent;
-	border-top: 2px solid $gold;
-	opacity: 0.2;
-}
-
-ul.list-bullet {
-	list-style: initial;
-	margin: 15px 0;
-	li {
-		margin-inline-start: 30px;
-	}
-}
-
-//BODY & CONTAINER
-body {
-	font-family: 'Aleo', serif;
-	margin: 0px;
-	box-sizing: border-box;
-	font-size: 1rem;
-	color: $grey;
-}
-.container {
-	max-width: 768px;
-	margin: 0 auto;
-	padding: 50px 20px;
-}
-
-//ELEMENTS
-.decorative-title {
-	&:after {
-		content: "";
-		background-image: url('../img/ring.svg');
-		width: 70px;
-	    height: 52px;
-	    background-size: contain;
-	    font-size: 5rem;
-	    position: absolute;
-	    opacity: 0.3;
-	    left: 0;
-	    right: 0;
-	    top: -13px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    z-index: -1;
-	}
-}
-
-//BUTTON
-.button {
-	// height: auto;
-	white-space: unset;
-	line-height: 1.3rem;
-	margin-bottom: 15px;
-	font-family: 'Aleo', serif;
-	padding: 0 1.5em;
-	transition: background-color 0.15s;
-	&.blue {
-		background-color: $navy-blue;
-		color: white;
-		border-color: transparent;
-		&:hover {
-			background-color: lighten($navy-blue, 10%);
-			border-color: transparent;
-		}
-	}
-	&.gold {
-		background-color: $gold;
-		color: $navy-blue;
-		border-color: transparent;
-		&:hover {
-			background-color: lighten($gold, 10%);
-			border-color: transparent;
-		}
-	}
-}
-
-//BG PANELS
-.dark {
-	background-color: $navy-blue;
-	color: white;
-	h1, h2, h3, h4, h5, h6 {
-		color: $gold;
-	}
-	label { color: white; }
-}
-.bordered {
-	margin: 20px;
-    border: 2px solid $gold;
-    border-radius: 1px;
-}
-.bg-arch { background-image: url('../img/blue-arch.png'); }
-
-
-//HELPER CLASSES
-.valign-center { align-items: center; }
-.margin-auto { margin: 0 auto; }
-.no-wrap { white-space: nowrap; }
-.is-group { margin-bottom: 20px; }
-
-//OVERRIDES
-.select.is-expanded {
-	width: 100%;
-	select { width: 100%; }
-}
-
-
 
 /////////////////////////
 //SECTION: HEADER
@@ -252,7 +259,7 @@ body {
 #header {
 	// background-color: lighten($gold, 20%);
 	min-height: 500px;
-	background-image: url('../img/headerbanner2.jpg');
+	background-image: url('../img/headerbanner.jpg');
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -301,6 +308,7 @@ body {
 		line-height: 1.2rem;
     	margin-top: 5px;
 	}
+	.googlemaps { height: 300px; }
 }
 
 /////////////////////////
@@ -445,6 +453,7 @@ body {
 .slick-slide { margin: 0 15px; } /* Parent */
 .slick-list { margin: 0 -15px; } /* Parent */
 .slick-track { display: flex; }
+.img-slick { div {height: 300px;}}
 
 
 //Hide Show Before/After

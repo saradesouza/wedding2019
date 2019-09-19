@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  $('.navigation-bar').hide();
   ///////////
   //SMOOTH SCROLL
   ///////////
@@ -47,37 +48,11 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 1,
     adaptiveHeight: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 787,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 680,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
   });
 });
 
@@ -87,9 +62,9 @@ $(document).ready(function(){
 /////////////////////////////
 
 var today = new Date().getTime();
-// var today = new Date("November 23, 2019 00:00:00").getTime();
-var rsvpDeadline = new Date("November 1, 2019 00:00:00").getTime();
-var weddingDay = new Date("December 1, 2019 9:30:00").getTime();
+// var today = new Date("December 23, 2019 00:00:00").getTime();
+var rsvpDeadline = new Date("November 14, 2019 00:00:00").getTime();
+var weddingDay = new Date("December 1, 2019 12:45:00").getTime();
 
 //COUNTDOWN
 // Update the count down every 1 second
@@ -114,13 +89,23 @@ var x = setInterval(function() {
 //HIDE/SHOW DIVS BASED ON TIME
 window.setInterval(function(){
   if(today>weddingDay){ //after wedding
-    $('#rsvp, #cta-before, .prewedding').hide();
-    $('#upload, #guestbook, #cta-after, .postwedding').show();
+    $('#cta-before, .prewedding').hide();
+    $('#cta-after, .postwedding').show();
   }
   else { //prewedding
-    $('#rsvp, #cta-before, .prewedding').show();
-    $('#upload, #guestbook, #cta-after, .postwedding').hide();
+    $('#cta-before, .prewedding').show();
+    $('#cta-after, .postwedding').hide();
   }
+
+  if (today>rsvpDeadline){ //rsvp deadline
+    $('.post-rsvp').show();
+    $('.pre-rsvp').hide();
+  }
+  else {
+    $('.post-rsvp').hide();
+    $('.pre-rsvp').show();
+  }
+
   clearInterval();
 });
 

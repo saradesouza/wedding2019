@@ -6962,6 +6962,152 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003366;
+  font-family: 'Alice', serif;
+  margin-bottom: 30px; }
+
+h1 {
+  letter-spacing: 0.5rem; }
+
+h2 {
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 2.1rem;
+  z-index: 5;
+  position: relative; }
+
+h4 {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin-bottom: 0px;
+  line-height: 1.6rem;
+  margin-bottom: 5px; }
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #1a334d;
+  font-family: 'Aleo', serif;
+  margin: 15px 0 0; }
+
+a.white {
+  color: white; }
+  a.white:hover {
+    text-decoration: underline; }
+
+p {
+  line-height: 1.6rem; }
+
+strong {
+  color: #585858; }
+
+hr {
+  background-color: transparent;
+  border-top: 2px solid #f2b826;
+  opacity: 0.2; }
+
+ul {
+  margin-top: 10px; }
+  ul li {
+    margin-bottom: 10px; }
+  ul.list-bullet {
+    list-style: initial;
+    margin: 15px 0; }
+    ul.list-bullet li {
+      margin-inline-start: 30px; }
+
+body {
+  font-family: 'Aleo', serif;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #727272; }
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 50px 30px; }
+
+.decorative-title:after {
+  content: "";
+  background-image: url("../img/ring.svg");
+  width: 70px;
+  height: 52px;
+  background-size: contain;
+  font-size: 5rem;
+  position: absolute;
+  opacity: 0.3;
+  left: 0;
+  right: 0;
+  top: -13px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1; }
+
+.button {
+  white-space: unset;
+  line-height: 1.3rem;
+  margin-bottom: 15px;
+  font-family: 'Aleo', serif;
+  padding: 0 1.5em;
+  transition: background-color 0.15s; }
+  .button.blue {
+    background-color: #003366;
+    color: white;
+    border-color: transparent; }
+    .button.blue:hover {
+      background-color: #004d99;
+      border-color: transparent; }
+  .button.gold {
+    background-color: #f2b826;
+    color: #003366;
+    border-color: transparent; }
+    .button.gold:hover {
+      background-color: #f5c856;
+      border-color: transparent; }
+
+.dark {
+  background-color: #003366;
+  color: white; }
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark strong {
+    color: #f2b826; }
+  .dark label {
+    color: white; }
+
+.bordered {
+  margin: 20px;
+  border: 2px solid #f2b826;
+  border-radius: 1px; }
+
+.bg-arch {
+  background-image: url("../img/blue-arch.png"); }
+
+.valign-center {
+  align-items: center; }
+
+.margin-auto {
+  margin: 0 auto; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+.is-group {
+  margin-bottom: 20px; }
+
+.select.is-expanded {
+  width: 100%; }
+  .select.is-expanded select {
+    width: 100%; }
+
 .sprite {
   display: block; }
   .sprite.farhan-sara {
@@ -7041,151 +7187,9 @@ label.panel-block {
     width: 300px;
     height: 300px; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #003366;
-  font-family: 'Alice', serif;
-  margin-bottom: 30px; }
-
-h1 {
-  letter-spacing: 0.5rem; }
-
-h2 {
-  letter-spacing: 0.2rem;
-  margin-bottom: 20px; }
-
-h3 {
-  font-size: 2.2rem;
-  line-height: 2.1rem;
-  z-index: 5;
-  position: relative; }
-
-h4 {
-  font-size: 1.6rem;
-  opacity: 0.7;
-  margin-bottom: 0px;
-  line-height: 1.6rem;
-  margin-bottom: 5px; }
-
-h5 {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #1a334d;
-  font-family: 'Aleo', serif;
-  margin: 10px 0 0; }
-
-a.white {
-  color: white; }
-  a.white:hover {
-    text-decoration: underline; }
-
-p {
-  line-height: 1.4rem; }
-
-strong {
-  color: #585858; }
-
-hr {
-  background-color: transparent;
-  border-top: 2px solid #f2b826;
-  opacity: 0.2; }
-
-ul.list-bullet {
-  list-style: initial;
-  margin: 15px 0; }
-  ul.list-bullet li {
-    margin-inline-start: 30px; }
-
-body {
-  font-family: 'Aleo', serif;
-  margin: 0px;
-  box-sizing: border-box;
-  font-size: 1rem;
-  color: #727272; }
-
-.container {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 50px 20px; }
-
-.decorative-title:after {
-  content: "";
-  background-image: url("../img/ring.svg");
-  width: 70px;
-  height: 52px;
-  background-size: contain;
-  font-size: 5rem;
-  position: absolute;
-  opacity: 0.3;
-  left: 0;
-  right: 0;
-  top: -13px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: -1; }
-
-.button {
-  white-space: unset;
-  line-height: 1.3rem;
-  margin-bottom: 15px;
-  font-family: 'Aleo', serif;
-  padding: 0 1.5em;
-  transition: background-color 0.15s; }
-  .button.blue {
-    background-color: #003366;
-    color: white;
-    border-color: transparent; }
-    .button.blue:hover {
-      background-color: #004d99;
-      border-color: transparent; }
-  .button.gold {
-    background-color: #f2b826;
-    color: #003366;
-    border-color: transparent; }
-    .button.gold:hover {
-      background-color: #f5c856;
-      border-color: transparent; }
-
-.dark {
-  background-color: #003366;
-  color: white; }
-  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    color: #f2b826; }
-  .dark label {
-    color: white; }
-
-.bordered {
-  margin: 20px;
-  border: 2px solid #f2b826;
-  border-radius: 1px; }
-
-.bg-arch {
-  background-image: url("../img/blue-arch.png"); }
-
-.valign-center {
-  align-items: center; }
-
-.margin-auto {
-  margin: 0 auto; }
-
-.no-wrap {
-  white-space: nowrap; }
-
-.is-group {
-  margin-bottom: 20px; }
-
-.select.is-expanded {
-  width: 100%; }
-  .select.is-expanded select {
-    width: 100%; }
-
 #header {
   min-height: 500px;
-  background-image: url("../img/headerbanner2.jpg");
+  background-image: url("../img/headerbanner.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -7226,6 +7230,9 @@ body {
   opacity: 0.6;
   line-height: 1.2rem;
   margin-top: 5px; }
+
+#wedding .googlemaps {
+  height: 300px; }
 
 #faq {
   counter-reset: faq; }
@@ -7347,6 +7354,9 @@ body {
 /* Parent */
 .slick-track {
   display: flex; }
+
+.img-slick div {
+  height: 300px; }
 
 #cta-before, #cta-after, #rsvp, #reception-activity, #guestbook, .postwedding, .prewedding {
   display: none; }
