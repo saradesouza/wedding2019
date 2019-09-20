@@ -1,6 +1,4 @@
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
-@import url(../script/slick/slick.css);
-@import url(../script/slick/slick-theme.css);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -7044,7 +7042,7 @@ label {
       font-size: 1rem; } }
 
 body {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Halant', serif;
   margin: 0px;
   box-sizing: border-box;
   font-size: 1.2rem;

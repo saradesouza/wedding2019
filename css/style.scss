@@ -1,6 +1,4 @@
 @import "bulma.sass";
-@import "../script/slick/slick.css";
-@import "../script/slick/slick-theme.css";
 
 $navy-blue: #003366;
 $grey: #727272;
@@ -89,7 +87,7 @@ label {
 
 //BODY & CONTAINER
 body {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Halant', serif;
 	margin: 0px;
 	box-sizing: border-box;
 	font-size: 1.2rem;
